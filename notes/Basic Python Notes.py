@@ -1,11 +1,12 @@
+"""
 print("Hello World!")
 
-#Apparently I'm going to slow, so I will speed up
-#This is a comment
-#THis has no effect on the code
-#This is used for a varity of things, such as
-#1. Making personal notes about my code
-#2. Commenting out code that does not work
+# Apparently I'm going to slow, so I will speed up
+# This is a comment
+# THis has no effect on the code
+# This is used for a varity of things, such as
+# 1. Making personal notes about my code
+# 2. Commenting out code that does not work
 
 print("Notice what is happening here.")
 print()  # This crates a new line
@@ -45,3 +46,45 @@ print("Hello %s" % name)
 
 age = input("How old are you?")
 print("%s? You belong in a museum!" % age)
+
+# Recasting
+real_age = int(input("how old are you again? "))
+hidden_age = real_age + 5
+print(hidden_age)
+"""
+
+# Multi-line Comments
+
+"""
+This is a multi-line comment
+anything in between them is automatically commented out.
+"""
+
+
+# Defining Functions
+def say_it():
+    print("Hello World!")
+
+
+say_it()
+say_it()
+say_it()
+
+
+# f(x) = 2x + 3
+def f(x):
+    print(2*x + 3)
+
+
+f(1)
+f(5)
+f(5000)
+
+
+def distance(x1, y1, x2, y2):
+    dist = ((x2-x1)**2 + (y2-y1)**2)**(1/2)
+    print(dist)
+
+
+distance(0, 0, 3, 4)
+distance(0, 0, 5, 12)
