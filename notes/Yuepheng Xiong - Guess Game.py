@@ -1,10 +1,15 @@
 import random   # This should be on line 1
+guesses = 5
 
-guess = input("Guess a number from 0-10")
+random_number = random.randint(1, 10)
 
-random_number = random.randint(0, 10)
+playing = True
 
-if int(guess) == int(random_number):
-    print("You Win!")
-else:
-    print("Try again")
+while guesses > 0 and playing:
+    guess = input("Guess a number from 0-10. You have five guesses")
+    if int(guess) == int(random_number):
+        print("You Win!")
+        playing = False
+    else:
+        print("Try again")
+        guesses -= 1
