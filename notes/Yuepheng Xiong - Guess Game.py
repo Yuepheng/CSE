@@ -13,3 +13,5 @@ while guesses > 0 and playing:
     else:
         print("Try again")
         guesses -= 1
+        print("Guess a number that's lower OR higher than this. :)")
+
