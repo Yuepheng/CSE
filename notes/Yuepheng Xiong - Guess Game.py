@@ -10,10 +10,8 @@ while guesses > 0 and playing:
     if int(guess) == int(random_number):
         print("You Win!")
         playing = False
-    if int(guesses) > int(random_number):
-        print("The number is too low.")
-    if int(guesses) < int(random_number):
-        print("The Number is too high")
+    elif int(guesses) >= int(random_number):
+        print("The number is too high.")
     else:
-        print("Try again")
-        guesses = guesses - 1
+        print("The Number is too low")
+    guesses -= 1
