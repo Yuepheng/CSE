@@ -18,7 +18,7 @@ print(fruit)
 for item in fruit:
     print(item)
 
-#MAKING OUT OWN LIST
+#MAKING OUR OWN LIST
 Brand = ['Toyota', 'Honda,', 'Ford', 'Chevorlette',]
 
 print("The last thing in the list is %s" % Brand[len(Brand) - 1])
