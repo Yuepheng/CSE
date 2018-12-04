@@ -1,4 +1,5 @@
-MadLibs.append(input('adjective', 'noun',)
+MadLibs('adjective', 'noun')
+MadLibs.append(input('adjective', 'noun',))
 
 
 
