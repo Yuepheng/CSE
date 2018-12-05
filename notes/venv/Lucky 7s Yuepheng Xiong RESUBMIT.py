@@ -5,7 +5,7 @@ import random
 money = 15
 rounds = 0
 
-while money >= 0:
+while money >= 1:
     die_1 = random.randint(1, 6)
     die_2 = random.randint(1, 6)
     roll = die_1 + die_2
@@ -14,7 +14,7 @@ while money >= 0:
         print("You gain some money")
         print("you have %s money" % money)
         print("You've passed %s rounds" % rounds)
-        money += 8
+        money +=4
     else:
         money -= 1
         print("you have %s money" % money)

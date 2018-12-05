@@ -26,6 +26,7 @@ print(12 // 3)
 print(9 // 4)  # This will ONLY give me a whole number
 print()
 
+
 print("Figure this out too...")
 print(6 % 4)
 print(5 % 3)
@@ -52,6 +53,8 @@ real_age = int(input("how old are you again? "))
 hidden_age = real_age + 5
 print(hidden_age)
 """
+
+
 
 # Multi-line Comments
 
