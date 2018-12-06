@@ -54,8 +54,6 @@ hidden_age = real_age + 5
 print(hidden_age)
 """
 
-
-
 # Multi-line Comments
 
 """
@@ -161,4 +159,3 @@ def pythagorean(a, b):
 
 
 print(pythagorean(3, 4))
-
