@@ -16,6 +16,10 @@ MadLibs.append(input('Type an adjective'))
 MadLibs.append(input('A noun type it please'))
 MadLibs.append(input('One more adjective please'))
 MadLibs.append(input('One last noun please'))
+MadLibs.append(input('Another Adjective :)'))
+MadLibs.append(input('I lied, give me one more noun'))
+MadLibs.append(input('Type another adjective :)'))
+MadLibs.append(input('Type another noun :)'))
 
 
 
