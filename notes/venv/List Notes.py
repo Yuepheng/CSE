@@ -1,6 +1,6 @@
 # Creating a list
 fruit = ['apples', 'oranges', 'blackberries', 'strawberries',
-         'blueberries','pineapple','watermellon','coconut', 'Jackfruit',]  # USE SQUARE BRACKETS!!!!!!!!
+         'blueberries','pineapple','watermellon','coconut', 'Jackfruit']  # USE SQUARE BRACKETS!!!!!!!!
 print(fruit)
 
 # Pulling items from a list
@@ -18,12 +18,12 @@ print(fruit)
 for item in fruit:
     print(item)
 
-#MAKING OUR OWN LIST
+# MAKING OUR OWN LIST
 Brand = ['Toyota', 'Honda,', 'Ford', 'Chevorlette',]
 
 print("The last thing in the list is %s" % Brand[len(Brand) - 1])
 
-#Mr. Wibe List
+# Mr. Wiebe List
 ToyotaCarModels = ['corolla', 'camry', 't100', 'tundra', 'cessida',
                    'chicken', 'corollahatch', 'ae86', 'gt86',
                    'crown','hilux', 'tacoma', 'supra', 'celicagts',
@@ -47,20 +47,20 @@ ToyotaCarModels.insert(2, "C-HR")
 print(ToyotaCarModels)
 
 
-#Removing from a list
+# Removing from a list
 ToyotaCarModels.remove("t100")
 ToyotaCarModels.remove("tundra")
 print(ToyotaCarModels)
 # This removes the specific item from the list
 
-#Removing from a list (pt 2)
-#Sometimes you don't know what is in the list, but you know
-#you want to get rid of something at a specific index
+# Removing from a list (pt 2)
+# Sometimes you don't know what is in the list, but you know
+# you want to get rid of something at a specific index
 ToyotaCarModels.pop(0)
 print(ToyotaCarModels)
-#Notice that "corolla" is no longer in the list because was it at index 0
+# Notice that "corolla" is no longer in the list because was it at index 0
 
-#Practice time...
+# Practice time...
 
 
 HondaCarmodels = ['civic', 'accord', 'prelude','insight',]
@@ -71,7 +71,7 @@ HondaCarmodels.remove("accord")
 print(HondaCarmodels)
 
 
-#Finding things in a list
+# Finding things in a list
 print(ToyotaCarModels.index("chicken"))
 # THis printed 9 for me, so chicken must be at index 9.
 # This is an easy way of finding things in a list.
@@ -84,7 +84,7 @@ string1 = "turquoise"
 list1 = list(string1)
 print(list1)
 
-#Hangman Hints
+# Hangman Hints
 for i in range(len(list1)):  # i goes through all indices
     if list1[i] == "u":  # if we find a "U"
         list1.pop(i)  #Remove the i-th index
