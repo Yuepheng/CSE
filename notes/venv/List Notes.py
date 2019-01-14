@@ -63,7 +63,7 @@ print(ToyotaCarModels)
 # Practice time...
 
 
-HondaCarmodels = ['civic', 'accord', 'prelude','insight',]
+HondaCarmodels = ['civic', 'accord', 'prelude', 'insight', ]
 HondaCarmodels.append('civicSI')
 print(HondaCarmodels)
 
@@ -87,8 +87,8 @@ print(list1)
 # Hangman Hints
 for i in range(len(list1)):  # i goes through all indices
     if list1[i] == "u":  # if we find a "U"
-        list1.pop(i)  #Remove the i-th index
-        list1.insert(i, "*")  #Put a * there instead
+        list1.pop(i)  # Remove the i-th index
+        list1.insert(i, "*")  # Put a * there instead
 
 # Changing back into a string (list→string)
 print("".join(list1))

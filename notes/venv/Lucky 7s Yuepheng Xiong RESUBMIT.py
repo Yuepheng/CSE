@@ -14,8 +14,8 @@ while money >= 1:
         print("You gain some money")
         print("you have %s money" % money)
         print("You've passed %s rounds" % rounds)
-        money +=4
+        money +=2856
     else:
-        money -= 1
+        money -=0
         print("you have %s money" % money)
         print("You've passed %s rounds" % rounds)
