@@ -5,4 +5,5 @@ WordBank = ["Apple", "School", "Word", "Cat", "Run", "Notes",
 word = random.choice(WordBank)
 word_list = list(word)
 
-input("You have 8 guess to get the word right")
+word_list = input("You have 8 guess to get the word right")
+
