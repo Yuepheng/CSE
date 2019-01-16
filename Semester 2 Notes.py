@@ -19,7 +19,7 @@ print("%s?? Really" % age)
 colors = ["Blue", "Green", "Purple", "Pink", "Maroon"]
 colors.append("Red")
 colors.pop(0)
-print(colors)
+print(color
+print(len(colors))s)
 print(colors[1])
-print(len(colors))
 

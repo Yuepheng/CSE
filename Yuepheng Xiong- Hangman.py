@@ -1,9 +1,15 @@
 import random
-WordBank = ["Apple", "School", "Word", "Cat", "Run", "Notes",
-            "Mad", "Can", "Fix", "Man", ]
+WordBank = ["Apple.", "School.", "Word.", "Cat", "Run", "Notes",
+            "Mad.", "Can.", "Fix.", "Man.", ]
 
 word = random.choice(WordBank)
 word_list = list(word)
 
-word_list = input("You have 8 guess to get the word right")
+tries = 8
 
+while tries > 0:
+    guess = input("Type in a letter: ")
+
+
+# CHANGE THIS LATER!!!
+    tries -= 1
