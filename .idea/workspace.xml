@@ -11,10 +11,10 @@
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/CSE$Lucky_7s_Yuepheng_Xiong_RESUBMIT.coverage" NAME="Lucky 7s Yuepheng Xiong RESUBMIT Coverage Results" MODIFIED="1547502772543" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/notes/venv" />
     <SUITE FILE_PATH="coverage/CSE$Basic_Python_Notes.coverage" NAME="Basic Python Notes Coverage Results" MODIFIED="1547504962959" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/notes" />
-    <SUITE FILE_PATH="coverage/CSE$List_Notes.coverage" NAME="List Notes Coverage Results" MODIFIED="1547071192051" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/notes/venv" />
     <SUITE FILE_PATH="coverage/CSE$Yuepheng_Xiong___Guess_Game.coverage" NAME="Yuepheng Xiong - Guess Game Coverage Results" MODIFIED="1547676802897" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/notes" />
+    <SUITE FILE_PATH="coverage/CSE$List_Notes.coverage" NAME="List Notes Coverage Results" MODIFIED="1548195964625" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/notes/venv" />
     <SUITE FILE_PATH="coverage/CSE$Semester_2_Notes.coverage" NAME="Semester 2 Notes Coverage Results" MODIFIED="1547764430949" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/CSE$Yuepheng_Xiong__Hangman.coverage" NAME="Yuepheng Xiong- Hangman Coverage Results" MODIFIED="1547850425529" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/CSE$Yuepheng_Xiong__Hangman.coverage" NAME="Yuepheng Xiong- Hangman Coverage Results" MODIFIED="1548194913371" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="FUSProjectUsageTrigger">
     <session id="340688036">
@@ -51,37 +51,37 @@
     <session id="-2051207176">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="9" />
+          <entry key="project.closed" value="11" />
           <entry key="project.open.time.30" value="1" />
           <entry key="project.open.time.40" value="2" />
           <entry key="project.open.time.43" value="1" />
           <entry key="project.open.time.49" value="1" />
-          <entry key="project.open.time.57" value="1" />
+          <entry key="project.open.time.57" value="2" />
           <entry key="project.open.time.62" value="1" />
           <entry key="project.open.time.64" value="1" />
           <entry key="project.open.time.71" value="1" />
           <entry key="project.open.time.79" value="1" />
-          <entry key="project.opened" value="10" />
+          <entry key="project.opened" value="11" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="py" value="17" />
+          <entry key="py" value="19" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="Python" value="17" />
+          <entry key="Python" value="19" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="py" value="1944" />
+          <entry key="py" value="2230" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Python" value="1944" />
+          <entry key="Python" value="2230" />
         </counts>
       </usages-collector>
     </session>
@@ -100,8 +100,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Yuepheng Xiong- Hangman.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+            <state relative-caret-position="459">
+              <caret line="17" column="24" lean-forward="true" selection-start-line="17" selection-start-column="24" selection-end-line="17" selection-end-column="24" />
               <folding>
                 <element signature="e#0#13#0" expanded="true" />
               </folding>
@@ -110,28 +110,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/notes/Yuepheng Xiong - Guess Game.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="10" column="1" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/notes/Basic Python Notes.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3321">
-              <caret line="123" selection-start-line="123" selection-end-line="123" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/notes/venv/List Notes.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2457">
-              <caret line="91" selection-start-line="91" selection-end-line="91" />
+            <state relative-caret-position="-5">
+              <caret line="79" column="18" lean-forward="true" selection-start-line="79" selection-start-column="18" selection-end-line="79" selection-end-column="18" />
             </state>
           </provider>
         </entry>
@@ -154,9 +136,10 @@
         <option value="$PROJECT_DIR$/notes/venv/Mad Libs Part 2.py" />
         <option value="$PROJECT_DIR$/Hangman.py" />
         <option value="$PROJECT_DIR$/notes/venv/Lucky 7s Yuepheng Xiong RESUBMIT.py" />
-        <option value="$PROJECT_DIR$/notes/venv/List Notes.py" />
         <option value="$PROJECT_DIR$/Something.py" />
         <option value="$PROJECT_DIR$/Semester 2 Notes.py" />
+        <option value="$PROJECT_DIR$/notes/venv/Mad Libs.py" />
+        <option value="$PROJECT_DIR$/notes/venv/List Notes.py" />
         <option value="$PROJECT_DIR$/Yuepheng Xiong- Hangman.py" />
       </list>
     </option>
@@ -167,7 +150,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="10" />
     <option name="y" value="20" />
     <option name="width" value="1346" />
@@ -178,6 +161,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -190,11 +174,16 @@
               <item name="CSE" type="462c0819:PsiDirectoryNode" />
               <item name="notes" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="CSE" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CSE" type="462c0819:PsiDirectoryNode" />
+              <item name="notes" type="462c0819:PsiDirectoryNode" />
+              <item name="venv" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -214,7 +203,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.Yuepheng Xiong- Hangman">
+  <component name="RunManager" selected="Python.List Notes">
     <configuration name="Basic Python Notes" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="CSE" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -237,7 +226,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="Lucky 7s Yuepheng Xiong RESUBMIT" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="List Notes" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="CSE" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -250,7 +239,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/notes/venv/Lucky 7s Yuepheng Xiong RESUBMIT.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/notes/venv/List Notes.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -328,17 +317,17 @@
     <list>
       <item itemvalue="Python.Semester 2 Notes" />
       <item itemvalue="Python.Yuepheng Xiong- Hangman" />
-      <item itemvalue="Python.Lucky 7s Yuepheng Xiong RESUBMIT" />
       <item itemvalue="Python.Basic Python Notes" />
       <item itemvalue="Python.Yuepheng Xiong - Guess Game" />
+      <item itemvalue="Python.List Notes" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.List Notes" />
         <item itemvalue="Python.Yuepheng Xiong- Hangman" />
         <item itemvalue="Python.Semester 2 Notes" />
         <item itemvalue="Python.Yuepheng Xiong - Guess Game" />
         <item itemvalue="Python.Basic Python Notes" />
-        <item itemvalue="Python.Lucky 7s Yuepheng Xiong RESUBMIT" />
       </list>
     </recent_temporary>
   </component>
@@ -357,9 +346,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1376" height="744" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2006079" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20364742" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -406,9 +394,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/notes/venv/Mad Libs.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/notes/Notes.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -424,27 +409,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Something.py" />
-    <entry file="file://$PROJECT_DIR$/notes/Yuepheng Xiong - Guess Game.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="10" column="1" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/notes/Basic Python Notes.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3321">
-          <caret line="123" selection-start-line="123" selection-end-line="123" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/notes/venv/List Notes.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2457">
-          <caret line="91" selection-start-line="91" selection-end-line="91" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Semester 2 Notes.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="162">
@@ -452,10 +416,45 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$USER_HOME$/.PyCharm2018.2/system/python_stubs/-1120166012/builtins.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="178">
+          <caret line="3630" column="9" lean-forward="true" selection-start-line="3630" selection-start-column="9" selection-end-line="3630" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/notes/Basic Python Notes.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-586">
+          <caret line="123" selection-start-line="123" selection-end-line="123" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/notes/Yuepheng Xiong - Guess Game.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="10" column="1" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/notes/venv/Mad Libs.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="972">
+          <caret line="36" column="7" selection-start-line="36" selection-start-column="7" selection-end-line="36" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/notes/venv/List Notes.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-5">
+          <caret line="79" column="18" lean-forward="true" selection-start-line="79" selection-start-column="18" selection-end-line="79" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Yuepheng Xiong- Hangman.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+        <state relative-caret-position="459">
+          <caret line="17" column="24" lean-forward="true" selection-start-line="17" selection-start-column="24" selection-end-line="17" selection-end-column="24" />
           <folding>
             <element signature="e#0#13#0" expanded="true" />
           </folding>

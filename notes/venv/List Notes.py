@@ -1,6 +1,6 @@
 # Creating a list
 fruit = ['apples', 'oranges', 'blackberries', 'strawberries',
-         'blueberries','pineapple','watermellon','coconut', 'Jackfruit']  # USE SQUARE BRACKETS!!!!!!!!
+         'blueberries','pineapple','watermellon', 'coconut', 'Jackfruit']  # USE SQUARE BRACKETS!!!!!!!!
 print(fruit)
 
 # Pulling items from a list

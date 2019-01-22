@@ -1,6 +1,7 @@
 import string
 import random
-print(string.punctuation)
+Punctuation = list(string.punctuation)
+
 WordBank = ["Apple.", "School.", "Word.", "Cat", "Run", "Notes",
             "Mad.", "Can.", "Fix.", "Man.", ]
 
@@ -13,7 +14,7 @@ tries = 8
 while tries > 0:
     guess = input("Type in a letter: ")
     if guess == list(word):
-        print("")
+        WordBank.pop(20)
+        WordBank.insert(, ""):
 
-# CHANGE THIS LATER!!!
-    tries -= 1
+        tries -= 1
