@@ -12,9 +12,13 @@ tries = 8
 
 
 while tries > 0:
-    guess = input("Type in a letter: ")
-    if guess == list(word):
-        WordBank.pop(20)
-        WordBank.insert(, ""):
+    guess = input("Type in a letter: ")  # UNDER THIS TEXT IS INFORMATIONAL STUFF
+    for i in range(len(WordBank)):  # i goes through all indices
+        if word_list[] == "u":  # if we find a "U"
+            word_list.pop()  # Remove the i-th index
+            word_list.insert(, "*") # Put a * there instead
+            print("You're Right")
+        else:
+            print("You're Wrong!")
 
-        tries -= 1
+tries -= 1
