@@ -6,19 +6,24 @@ WordBank = ["Apple.", "School.", "Word.", "Cat", "Run", "Notes",
             "Mad.", "Can.", "Fix.", "Man.", ]
 
 word = random.choice(WordBank)
+word = "school"
 word_list = list(word)
 
+letters_guessed = []
 tries = 8
 
 
 while tries > 0:
-    guess = input("Type in a letter: ")  # UNDER THIS TEXT IS INFORMATIONAL STUFF
-    for i in range(len(WordBank)):  # i goes through all indices
-        if word_list[] == "u":  # if we find a "U"
-            word_list.pop()  # Remove the i-th index
-            word_list.insert(, "*") # Put a * there instead
-            print("You're Right")
+    hidden_word = []
+    # Hide/SHow the word
+    for letter in word:  # i goes through all indices
+        if letter in letters_guessed:  # show the letter
+            hidden_word.append(letter)
         else:
-            print("You're Wrong!")
+            hidden_word.append("*")
+    print(hidden_word)
 
-tries -= 1
+    guess = input("Type in a letter: ")  # UNDER THIS TEXT IS INFORMATIONAL STUFF
+    letters_guessed.append(guess)
+
+    tries -= 1
