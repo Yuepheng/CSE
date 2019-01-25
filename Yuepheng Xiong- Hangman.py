@@ -6,8 +6,8 @@ WordBank = ["Apple.", "School.", "Word.", "Cat", "Run", "Notes",
             "Mad.", "Can.", "Fix.", "Man.", ]
 
 word = random.choice(WordBank)
-word = "school"
 word_list = list(word)
+
 
 letters_guessed = []
 tries = 8
