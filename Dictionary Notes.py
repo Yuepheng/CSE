@@ -53,7 +53,7 @@ complex_dictionary = {
     },
     "WI": {
         "NAME": "Wisconsin",
-        "POPULATION": 5800000  # 5,800,000
+        "POPULATION": 5800000,  # 5,800,000
         "CITIES": [
             "Madison",
             "Milwaukee",
@@ -70,3 +70,24 @@ complex_dictionary = {
         ]
     }
 }
+
+print(complex_dictionary["NY"]["CITIES"][0])
+print(complex_dictionary["NJ"]["CITIES"][2])
+
+print(complex_dictionary.keys())         # TO SEE THE TWO LETTERS OF THE 4 STATES
+print(complex_dictionary.items())        #
+print(nested_dictionary.items())
+
+
+for key, value in complex_dictionary.items():
+    print(key)
+    print(value)
+    print("-" * 20)
+
+print()
+for state, info in complex_dictionary.items():
+    for title, desc in info.items():
+        print(title)
+        print(desc)
+        print("-" * 20)
+    print('=' * 20)
