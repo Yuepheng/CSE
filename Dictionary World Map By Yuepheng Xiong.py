@@ -1,4 +1,3 @@
-
 world_map = {
     'R19A': {
         'NAME': "Mr. Wiebe's Room",
@@ -15,6 +14,9 @@ world_map = {
         'PATHS': {
             'SOUTH': 'R19A'
         }
+    }
+    'AMPHITHEATER': {
+        
     }
 }
 

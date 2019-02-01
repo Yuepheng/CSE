@@ -32,6 +32,8 @@ while tries > 0:
 
     tries -= 1
 
-if not playing
+if not playing:
+    playing = True
 
-else
+else:
+    playing = False
