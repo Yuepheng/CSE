@@ -1,6 +1,6 @@
 world_map = {
     'R19A': {
-        'NAME': "Mr. Wiebe's Room",
+        'NAME': "Mr. Wade's Room",
         'DESCRIPTION': "THis is the room you are in",
         'PATHS': {
             'NORTH': "PARKING_LOT"
@@ -14,10 +14,27 @@ world_map = {
         'PATHS': {
             'SOUTH': 'R19A'
         }
-    }
+    },
     'AMPHITHEATER': {
-        
+        'NAME': "The Stage outside",
+        'DESCRIPTION': "There might be some items here",
+        'PATHS': {
+            'SOUTH': 'R19A'
+        }
+    },
+    'CAFETERIA': {
+        'NAME': "The place to get food and chill",
+        'DESCRIPTION': "There is some leftover non eaten ham and cheese bars and there might"
+                       "be some items here",
+        'PATHS': {
+            'SOUTH': 'AMPHITHEATER'
+        }
     }
+
+
+
+
+
 }
 
 # Other Variables
