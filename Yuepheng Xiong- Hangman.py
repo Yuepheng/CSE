@@ -33,7 +33,7 @@ while tries > 0:
     tries -= 1
 
 if not playing:
-    playing = True
+    print("you won the game")
 
-else:
-    playing = False
+
+else 

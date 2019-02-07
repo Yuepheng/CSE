@@ -4,7 +4,8 @@ world_map = {
         'DESCRIPTION': "THis is the room you are in",
         'PATHS': {
             'NORTH': "PARKING_LOT",
-            'WEST': "AMPHITHEATER"
+            'WEST': "AMPHITHEATER",
+            'EAST': "R13B"
 
         }
 
@@ -49,6 +50,7 @@ world_map = {
             'SOUTH': 'ETHAN JAMES HIGH SCHOOL',
             'EAST': 'GRANDPARENTS HOUSE',
             'SOUTHEAST': 'PARENTS HOUSE',
+            'NORTH': 'SAN FRAMCISCO',
         }
     },
     'ETHAN JAMES HIGH SCHOOL': {
@@ -64,27 +66,58 @@ world_map = {
         'DESCRIPTION': "There could be some items here",
         'PATHS': {
             'SOUTHWEST': "DOWNTOWN DRESNO",
-            'EAST': "PARENTS HOUSE",
+            'SOUTHEAST': "PARENTS HOUSE",
 
         }
     },
     'PARENTS HOUSE': {
-        'NAME': "My Mom, Dad, 2 sisters and a brother live here",
+        'NAME': "My Mom, Dad, 2 sisters and brother live here",
         'DESCRIPTION': "There could be some helpful items here",
         'PATHS': {
-            'SOUTHWEST': "GRANDPARENTS HOUSE"
+            'SOUTHWEST': "GRANDPARENTS HOUSE",
+            'SOUTHEAST': "COUSINS HOUSE"
         }
     },
+    'OFFICE': {
+        'NAME': "The Front desk of Ethan James high school",
+        'DESCRIPTION': "You could talk to the VPs, assistants, and staff",
+        'PATHS': {
+            'SOUTH': "R19A",
+            'WEST': "PARKING_LOT",
+            'NORTH': "DOWNTOWN DRESNO"
+        }
+    },
+    'SAN FRAMSICO': {
+        'NAME': "THE CITY OF THE RICH PEOPLE",
+        'DESCRIPTION': "I might need some items in the stores here",
+        'PATHS': {
+            'SOUTH': "DOWNTOWN DRESNO"
+        }
+    },
+    'COUSINS HOUSE': {
+        'NAME': "My Cousins live here",
+        'DESCRIPTION': "They might be of help to me",
+        'PATHS': {
+            'NORTH': "PARENTS HOUSE",
+        }
+    },
+    'R13B': {
+        'NAME': "Mr. Dawson's Room",
+        'DESCRIPTION': "There could be some useful items here",
+    }
 }
 
+
 # Other Variables
-directions = ["NORTH", "SOUTH", "EAST", "WEST", "UP"]
+directions = ["SOUTHEAST", "SOUTHWEST", "NORTH", "SOUTH", "EAST", "WEST", "UP"]
 current_node = world_map["R19A"]  # THis is your current location
 playing = True
 
 # Controller
 while playing:
     print(current_node['NAME'])
+    print(current_node['DESCRIPTION'])
+    print(current_node['PATHS'])
 
     command = input(">_")
     if command.lower() in ['q', 'quit', 'exit']:
