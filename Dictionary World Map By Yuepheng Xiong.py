@@ -51,6 +51,7 @@ world_map = {
             'EAST': 'GRANDPARENTS HOUSE',
             'SOUTHEAST': 'PARENTS HOUSE',
             'NORTH': 'SAN FRAMCISCO',
+            'NORTHEAST': 'J MART'
         }
     },
     'ETHAN JAMES HIGH SCHOOL': {
@@ -104,7 +105,27 @@ world_map = {
     'R13B': {
         'NAME': "Mr. Dawson's Room",
         'DESCRIPTION': "There could be some useful items here",
-    }
+        'PATHS': {
+            'NORTH': "R19A",
+            'SOUTH': "CAFETERIA",
+            'EAST': "SL15"
+        }
+    },
+    'SL15': {
+        'NAME': "Science Lab",
+        'DESCRIPTION': "There might be some useful items here",
+        'PATHS': {
+            "NORTH": "R19A",
+            "SOUTH": "CAFETERIA"
+        }
+    },
+    'J MART': {
+        'NAMES': "The J Mart to get food, technology, clothing etc",
+        'DESCRIPTION': "I might need some of the useful items here",
+        'PATHS': {
+            "WEST": "DOWNTOWN DRESNO"
+        }
+    },
 }
 
 
