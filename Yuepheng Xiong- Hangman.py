@@ -1,20 +1,19 @@
 import string
 import random
 Punctuation = list(string.punctuation)
-
-WordBank = ["Apple.", "School.", "Word.", "Cat", "Run", "Notes",
-            "Mad.", "Can.", "Fix.", "Man.", ]
+playing = True
+WordBank = ["Apple", "School", "Word", "Cat", "Run", "Notes",
+            "Mad", "Can", "Fix", "Man", ]
 
 word = random.choice(WordBank)
 word_list = list(word)
-word = "Apple"
+
 
 letters_guessed = []
 tries = 8
 
-playing = True
 
-while tries > 0:
+while tries > 0 and playing:  # For when playing, This makes it to where if playing equals false, then it stops.
     hidden_word = []
     # Hide/SHow the word
     for letter in word:
@@ -22,9 +21,11 @@ while tries > 0:
             hidden_word.append(letter)
         else:
             hidden_word.append("*")
-    for letter in word_list:
-        if letter in word_list:
-            playing = False
+    print(hidden_word)
+    if "*" not in hidden_word:
+        print("You Guessed all the letters correctly!")
+        playing = False
+
     print(hidden_word)
 
     guess = input("Type in a letter: ")  # UNDER THIS TEXT IS INFORMATIONAL STUFF
@@ -33,7 +34,4 @@ while tries > 0:
     tries -= 1
 
 if not playing:
-    print("you won the game")
-
-
-else 
+    print("You Lost the Game")
