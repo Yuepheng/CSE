@@ -11,6 +11,7 @@ word_list = list(word)
 
 letters_guessed = []
 tries = 8
+win = False
 
 
 while tries > 0 and GameisOver:  # For when playing, This makes it to where if playing equals false, then it stops.
@@ -21,10 +22,11 @@ while tries > 0 and GameisOver:  # For when playing, This makes it to where if p
             hidden_word.append(letter)
         else:
             hidden_word.append("*")
-    print(hidden_word)
     if "*" not in hidden_word:
         print("You Guessed all the letters correctly!")
         GameisOver = False
+        win = True
+        continue
 
     print(hidden_word)
 
@@ -33,5 +35,7 @@ while tries > 0 and GameisOver:  # For when playing, This makes it to where if p
 
     tries -= 1
 
-if not GameisOver:
+if not GameisOver and not win:
     print("You Lost the Game")
+else:
+    print("YAY!!!!!")
