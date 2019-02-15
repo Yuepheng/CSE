@@ -19,5 +19,9 @@ class Pencil(object):
                 self.stuff_inside = 100
 
             else:
-                print("")
+                print("Alright, I'm sure this will be useful later...")
+    def wear(self, wear):
 
+
+test = Pencil()
+test.marking(15)
