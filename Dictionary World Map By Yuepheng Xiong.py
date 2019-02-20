@@ -112,7 +112,7 @@ world_map = {
         }
     },
     'SL15': {
-        'NAME': "Science Lab",
+        'NAME': "Mrs. Hazen's Biology Room",
         'DESCRIPTION': "There might be some useful items here",
         'PATHS': {
             "NORTH": "R19A",

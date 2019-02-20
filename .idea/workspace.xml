@@ -9,16 +9,17 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/CSE$Dictionary_Notes.coverage" NAME="Dictionary Notes Coverage Results" MODIFIED="1548973522867" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/CSE$Lucky_7s_Yuepheng_Xiong_RESUBMIT.coverage" NAME="Lucky 7s Yuepheng Xiong RESUBMIT Coverage Results" MODIFIED="1547502772543" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/notes/venv" />
     <SUITE FILE_PATH="coverage/CSE$Basic_Python_Notes.coverage" NAME="Basic Python Notes Coverage Results" MODIFIED="1547504962959" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/notes" />
-    <SUITE FILE_PATH="coverage/CSE$List_Notes.coverage" NAME="List Notes Coverage Results" MODIFIED="1548367408419" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/notes/venv" />
-    <SUITE FILE_PATH="coverage/CSE$Dictionary_World_Map_By_Yuepheng_Xiong.coverage" NAME="Dictionary World Map By Yuepheng Xiong Coverage Results" MODIFIED="1550011406027" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/CSE$Yuepheng_Xiong___Guess_Game.coverage" NAME="Yuepheng Xiong - Guess Game Coverage Results" MODIFIED="1547676802897" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/notes" />
-    <SUITE FILE_PATH="coverage/CSE$Yuepheng_Xiong__Hangman.coverage" NAME="Yuepheng Xiong- Hangman Coverage Results" MODIFIED="1550268000112" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/CSE$Object_Notes.coverage" NAME="Object Notes Coverage Results" MODIFIED="1550645617230" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/CSE$Semester_2_Notes.coverage" NAME="Semester 2 Notes Coverage Results" MODIFIED="1547764430949" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/CSE$World_Map_OOP.coverage" NAME="World Map OOP Coverage Results" MODIFIED="1550700183939" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/CSE$Dictionary_Notes.coverage" NAME="Dictionary Notes Coverage Results" MODIFIED="1548973522867" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/CSE$My_Object.coverage" NAME="My Object Coverage Results" MODIFIED="1550645640286" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/CSE$List_Notes.coverage" NAME="List Notes Coverage Results" MODIFIED="1548367408419" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/notes/venv" />
+    <SUITE FILE_PATH="coverage/CSE$Yuepheng_Xiong___Guess_Game.coverage" NAME="Yuepheng Xiong - Guess Game Coverage Results" MODIFIED="1547676802897" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/notes" />
+    <SUITE FILE_PATH="coverage/CSE$Semester_2_Notes.coverage" NAME="Semester 2 Notes Coverage Results" MODIFIED="1547764430949" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/CSE$Dictionary_World_Map_By_Yuepheng_Xiong.coverage" NAME="Dictionary World Map By Yuepheng Xiong Coverage Results" MODIFIED="1550011406027" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/CSE$Yuepheng_Xiong__Hangman.coverage" NAME="Yuepheng Xiong- Hangman Coverage Results" MODIFIED="1550268000112" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="DatabaseView">
     <option name="SHOW_INTERMEDIATE" value="true" />
@@ -87,6 +88,7 @@
           <entry key="project.open.time.53" value="1" />
           <entry key="project.open.time.56" value="1" />
           <entry key="project.open.time.57" value="2" />
+          <entry key="project.open.time.60" value="1" />
           <entry key="project.open.time.62" value="2" />
           <entry key="project.open.time.63" value="1" />
           <entry key="project.open.time.64" value="1" />
@@ -96,91 +98,116 @@
           <entry key="project.open.time.71" value="1" />
           <entry key="project.open.time.79" value="1" />
           <entry key="project.open.time.89" value="1" />
-          <entry key="project.opened" value="29" />
+          <entry key="project.opened" value="30" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="py" value="28" />
+          <entry key="py" value="30" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="Python" value="28" />
+          <entry key="Python" value="30" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="py" value="12129" />
+          <entry key="py" value="12760" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Python" value="12129" />
+          <entry key="Python" value="12760" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Yuepheng Xiong- Hangman.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="4" column="61" selection-start-line="4" selection-start-column="61" selection-end-line="4" selection-end-column="61" />
-              <folding>
-                <element signature="e#0#13#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Dictionary Notes.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1666">
-              <caret line="98" selection-start-line="98" selection-end-line="98" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Dictionary World Map By Yuepheng Xiong.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2210">
-              <caret line="130" selection-start-line="130" selection-end-line="130" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Object Notes.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="248">
-              <caret line="43" selection-start-line="43" selection-end-line="43" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/My Object.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="460">
-              <caret line="39" lean-forward="true" selection-start-line="39" selection-end-line="39" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Special_Random.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" selection-start-line="7" selection-end-line="7" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <splitter split-orientation="horizontal" split-proportion="0.407932">
+      <split-first>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/Yuepheng Xiong- Hangman.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state>
+                  <caret line="4" column="61" selection-start-line="4" selection-start-column="61" selection-end-line="4" selection-end-column="61" />
+                  <folding>
+                    <element signature="e#0#13#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/Dictionary Notes.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="2646">
+                  <caret line="98" selection-start-line="98" selection-end-line="98" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/Dictionary World Map By Yuepheng Xiong.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="3456">
+                  <caret line="128" column="1" lean-forward="true" selection-start-line="128" selection-start-column="1" selection-end-line="128" selection-end-column="1" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/Object Notes.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="187">
+                  <caret line="43" selection-start-line="43" selection-end-line="43" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/World Map OOP.py">
+              <provider selected="true" editor-type-id="text-editor" />
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/My Object.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="-7">
+                  <caret line="39" selection-start-line="39" selection-end-line="39" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/Special_Random.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state>
+                  <caret line="7" selection-start-line="7" selection-end-line="7" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-first>
+      <split-second>
+        <leaf>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/World Map OOP.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="386">
+                  <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
+                  <folding>
+                    <marker date="1550701726332" expanded="true" signature="19:24" ph="..." />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-second>
+    </splitter>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -209,11 +236,12 @@
         <option value="$PROJECT_DIR$/notes/venv/Mad Libs.py" />
         <option value="$PROJECT_DIR$/notes/venv/List Notes.py" />
         <option value="$PROJECT_DIR$/Dictionary Notes.py" />
-        <option value="$PROJECT_DIR$/Dictionary World Map By Yuepheng Xiong.py" />
         <option value="$PROJECT_DIR$/Special_Random.py" />
         <option value="$PROJECT_DIR$/Yuepheng Xiong- Hangman.py" />
         <option value="$PROJECT_DIR$/Object Notes.py" />
         <option value="$PROJECT_DIR$/My Object.py" />
+        <option value="$PROJECT_DIR$/Dictionary World Map By Yuepheng Xiong.py" />
+        <option value="$PROJECT_DIR$/World Map OOP.py" />
       </list>
     </option>
   </component>
@@ -223,7 +251,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="676" />
     <option name="y" value="364" />
     <option name="width" value="697" />
@@ -265,29 +293,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.My Object">
-    <configuration name="Dictionary Notes" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="CSE" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Dictionary Notes.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Python.World Map OOP">
     <configuration name="Dictionary World Map By Yuepheng Xiong" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="CSE" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -354,6 +360,28 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="World Map OOP" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="CSE" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/World Map OOP.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="Yuepheng Xiong- Hangman" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="CSE" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -378,18 +406,18 @@
     </configuration>
     <list>
       <item itemvalue="Python.Yuepheng Xiong- Hangman" />
-      <item itemvalue="Python.Dictionary Notes" />
       <item itemvalue="Python.Dictionary World Map By Yuepheng Xiong" />
       <item itemvalue="Python.Object Notes" />
       <item itemvalue="Python.My Object" />
+      <item itemvalue="Python.World Map OOP" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.World Map OOP" />
         <item itemvalue="Python.My Object" />
         <item itemvalue="Python.Object Notes" />
         <item itemvalue="Python.Yuepheng Xiong- Hangman" />
         <item itemvalue="Python.Dictionary World Map By Yuepheng Xiong" />
-        <item itemvalue="Python.Dictionary Notes" />
       </list>
     </recent_temporary>
   </component>
@@ -410,12 +438,12 @@
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49726775" visible="true" weight="0.19571866" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49726775" visible="true" weight="0.19894099" />
       <window_info id="Structure" order="1" sideWeight="0.5027322" side_tool="true" weight="0.20668693" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.3458904" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3442623" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -511,7 +539,7 @@
     <entry file="file://$USER_HOME$/.PyCharm2018.2/system/python_stubs/-1120166012/builtins.py" />
     <entry file="file://$PROJECT_DIR$/Yuepheng Xiong- Hangman.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
+        <state>
           <caret line="4" column="61" selection-start-line="4" selection-start-column="61" selection-end-line="4" selection-end-column="61" />
           <folding>
             <element signature="e#0#13#0" expanded="true" />
@@ -519,38 +547,48 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Special_Random.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/My Object.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-7">
+          <caret line="39" selection-start-line="39" selection-end-line="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Object Notes.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="43" selection-start-line="43" selection-end-line="43" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Dictionary Notes.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1666">
+        <state relative-caret-position="2646">
           <caret line="98" selection-start-line="98" selection-end-line="98" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Dictionary World Map By Yuepheng Xiong.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2210">
-          <caret line="130" selection-start-line="130" selection-end-line="130" />
+        <state relative-caret-position="3456">
+          <caret line="128" column="1" lean-forward="true" selection-start-line="128" selection-start-column="1" selection-end-line="128" selection-end-column="1" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Special_Random.py">
+    <entry file="file://$PROJECT_DIR$/World Map OOP.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" selection-start-line="7" selection-end-line="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Object Notes.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="248">
-          <caret line="43" selection-start-line="43" selection-end-line="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/My Object.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="460">
-          <caret line="39" lean-forward="true" selection-start-line="39" selection-end-line="39" />
+        <state relative-caret-position="386">
+          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
+          <folding>
+            <marker date="1550701726332" expanded="true" signature="19:24" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
