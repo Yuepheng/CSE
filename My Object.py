@@ -20,8 +20,20 @@ class Pencil(object):
 
             else:
                 print("Alright, I'm sure this will be useful later...")
-    def wear(self, wear):
+
+    def wear(self):
+        self.stuff_inside = False
+        print("Looks like I need to sharpen the pencil")
+        print("There. It's sharp.")
+
+    def eraser(self):
+        self.stuff_inside -= 100
+        print("Well this looks like its at a %s percentage of wear before I need to sharpen it." % 100)
 
 
 test = Pencil()
 test.marking(15)
+test = Pencil()
+test.wear()
+test = Pencil()
+test.eraser()
