@@ -28,7 +28,7 @@ world_map = {
     },
     'CAFETERIA': {
         'NAME': "The place to get food and chill",
-        'DESCRIPTION': "There is some leftover non eaten ham and cheese bars and there might"
+        'DESCRIPTION': "There is some leftover non eaten baked ham and cheese bars and there might"
                        "be some items here",
         'PATHS': {
             'SOUTH': 'AMPHITHEATER',
