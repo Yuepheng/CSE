@@ -12,10 +12,11 @@ class Room(object):
 
 
 # Option 1 - Use the Variables, but fix later
-R19A = Room("Mr. Wade's Room",)
-parking_lot = Room("The Parking Lot", None, R19A)
-Amphitheater = Room("The stage Outside", None, R19A)
-Cafeteria = Room("The Place to get food and chill", None, Amphitheater,)
+R19A = Room("Mr. Wade's Room", "This is the room you are in")
+parking_lot = Room("The Parking Lot", "THere are a few cars parked here", None, R19A)
+Amphitheater = Room("The stage Outside", "There might be some items here", None, R19A)
+Cafeteria = Room("The Place to get food and chill", "There is some leftover non eaten baked ham and cheese bars and"
+                                                    "there might be some items here", None, Amphitheater,)
 SB20 = Room("Mr Yang's Room", None, Cafeteria, parking_lot)
 Downtown_Dresno = Room("The City of Dresno", None, parking_lot)
 Ethan_James_High_School = Room("Ethan James High School Grades 9-12", None, Downtown_Dresno)
@@ -46,7 +47,7 @@ Downtown_Dresno.north = Ethan_James_High_School
 parking_lot.north = Downtown_Dresno
 parking_lot.south = SB20
 Cafeteria.north = SB20
-Amphitheater.north = Cafeteria
+Amphitheater.south = Cafeteria
 R19A.west = Amphitheater
 R19A.north = parking_lot  # Creates a Key when You type north
 
