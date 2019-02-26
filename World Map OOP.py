@@ -11,6 +11,29 @@ class Room(object):
         self.description = description
 
 
+class Player(object):
+    def __init__(self, starting_location):
+        self.health = 100
+        self.inventory = []
+        self.current_location = starting_location
+
+    def move(self, new_location):           # Changes what Room You're in
+        """This method moves a player to a new location
+
+        :param new_location: The room object that we move to
+        """
+        self.current_location = new_location
+
+    def find_room(self, direction):             # Turn a Direction into a Room Object
+        """This method takes a direction, and finds the variable of the Room
+
+        :param direction:A string (all lowercase), with a cardinal direction
+        :return: A Room object if it exists, None if it does not
+        """
+        return getattr(self.current_location, direction)
+        # getattr(R19A, "north")
+
+
 # Option 1 - Use the Variables, but fix later
 R19A = Room("Mr. Wade's Room", "This is the room you are in")
 parking_lot = Room("The Parking Lot", "THere are a few cars parked here", None, R19A)
@@ -57,5 +80,26 @@ R19A.west = Amphitheater
 R19A.north = parking_lot  # Creates a Key when You type north
 
 # Option 2 - Use strings, but more difficult controller
-R19A = Room("Mr. Wade's Room")
-parking_lot = Room("The Parking Lot", None, R19A)
+# R19A = Room("Mr. Wade's Room")
+# parking_lot = Room("The Parking Lot", None, R19A)
+
+player = Player(R19A)
+
+directions = ['north', 'south', 'east', 'west', 'southeast', 'northeast']
+playing = True
+
+# Controller
+while playing:
+    print(player.current_location.name)  # The player has a current location and that location has a name
+
+    command = input(">_")
+    if command.lower() in ['q', 'quit', 'exit']:
+        playing = False
+    elif command in directions:
+        try:
+            next_room = player.find_room(command)
+            player.move(next_room)
+        except KeyError:
+            print("I can't Go that Way")
+    else:
+        print("Command Not recognized.")
