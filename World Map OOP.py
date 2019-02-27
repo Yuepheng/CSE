@@ -1,6 +1,6 @@
 class Room(object):
     def __init__(self, description, name=None, north=None, south=None, east=None, west=None, southeast=None,
-                 northeast=None):
+                 northeast=None, NonPlayerChracter1=None):
         self.name = name
         self.north = north
         self.south = south
@@ -9,6 +9,13 @@ class Room(object):
         self.southeast = southeast
         self.northeast = northeast
         self.description = description
+        self.NonPlayerCharacter = NonPlayerChracter1
+
+
+class NonPlayerCharacter1(object):
+    def __init__(self):
+        self.health = 1000000000000000000
+        self.inventory = []
 
 
 class Player(object):
@@ -91,6 +98,7 @@ playing = True
 # Controller
 while playing:
     print(player.current_location.name)  # The player has a current location and that location has a name
+    print(player.current_location.description)  # The player has a current location and that location has a description
 
     command = input(">_")
     if command.lower() in ['q', 'quit', 'exit']:
@@ -98,6 +106,8 @@ while playing:
     elif command in directions:
         try:
             next_room = player.find_room(command)
+            if next_room is None:      # If the direction you typed is invalid
+                raise KeyError      # Bring up "I can't Go that way"
             player.move(next_room)
         except KeyError:
             print("I can't Go that Way")
