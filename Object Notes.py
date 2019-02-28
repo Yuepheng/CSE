@@ -1,7 +1,7 @@
 class Laptop(object):
     def __init__(self, screen_resolution, extra_space=1000, colour="Cobalt"):
         # THings that a Laptop has.
-        # Everything in this list should relevant to the program.
+        # Everything in this list attributes to the program.
         self.processor = "Intel i5"
         self.screen_resolution = screen_resolution
         self.battery_left = 100
