@@ -1,4 +1,4 @@
-class Vehicle(object):
+class Vehicle(object):          # Blueprint
     def __init__(self, name):
         self.name = name
 
@@ -31,9 +31,23 @@ class Viper(Car):
         super(Viper, self).__init__("Viper")
 
 
+class Tesla(Car):
+    def __init__(self):
+        super(Tesla, self).__init__("Tesla")
+
+    def start_engine(self):
+        self.engine_status = True
+        print("You push the button and the engine starts.")
+
+
 guled_car = Viper()
 guled_car.start_engine()
 guled_car.move_foward()
 guled_car.turn_left()
 guled_car.move_foward()
 guled_car.turn_off()
+
+
+bethany_car = Tesla()       # Bethany's car is a Tesla
+bethany_car.start_engine()
+bethany_car.move_foward()
