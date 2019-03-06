@@ -15,7 +15,7 @@ class Sedan(ModeOfTransportation):
         self.Oil_Level -= .001
         print("The Oil gauge reads that I still have LOTS of oil")
 
-    def the_battery_suppling_to_starter(self):
+    def the_battery_supplying_to_starter(self):
         self.battery_voltage -= .005
         print("The voltage meter reads that it is between 12 and 16 volts")
 
@@ -32,3 +32,13 @@ class Sedan(ModeOfTransportation):
         self.fuel_level -= .0001
         print("Good thing this Sedan has Power steering")
 
+
+class HondaAccord(Sedan):
+    def __init__(self):
+        super(HondaAccord, self).__init__("HondaAccord")
+
+
+NineteenNinetyNine = HondaAccord()
+NineteenNinetyNine.Oil_Level()
+NineteenNinetyNine.fuel_level()
+NineteenNinetyNine.battery_voltage()
