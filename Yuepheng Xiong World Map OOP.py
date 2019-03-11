@@ -1,6 +1,7 @@
 class Room(object):
     def __init__(self, description, name=None, north=None, south=None, east=None, west=None, southeast=None,
-                 northeast=None, NonPlayerChracter1=None):
+                 northeast=None,):
+
         self.name = name
         self.north = north
         self.south = south
@@ -9,13 +10,6 @@ class Room(object):
         self.southeast = southeast
         self.northeast = northeast
         self.description = description
-        self.NonPlayerCharacter = NonPlayerChracter1
-
-
-class NonPlayerCharacter1(object):
-    def __init__(self):
-        self.health = 1000000000000000000
-        self.inventory = []
 
 
 class Player(object):

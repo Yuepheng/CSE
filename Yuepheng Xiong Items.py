@@ -38,7 +38,32 @@ class HondaAccord(Sedan):
         super(HondaAccord, self).__init__("HondaAccord")
 
 
+class ToyotaCamry(Sedan):
+    def __init__(self):
+        super(ToyotaCamry, self).__init__("ToyotaCamry")
+
+    def starting_the_engine(self):
+        self.engine_on = False
+        print("I started the engine by Turning the key")
+
+
 NineteenNinetyNine = HondaAccord()
-NineteenNinetyNine.Oil_Level()
-NineteenNinetyNine.fuel_level()
-NineteenNinetyNine.battery_voltage()
+NineteenNinetyNine.amount_of_oil()
+NineteenNinetyNine.the_battery_supplying_to_starter()
+NineteenNinetyNine.amount_of_fuel()
+NineteenNinetyNine.starting_the_engine()
+
+NineteenNinetySix = ToyotaCamry()
+NineteenNinetySix.amount_of_fuel()
+NineteenNinetySix.starting_the_engine()
+
+
+class Case(object):
+    def __init__(self, name):
+        self.name
+
+
+class HpCase(Case):
+    def __init__(self, name):
+        super(Case, self).__init__(name)
+        self.size = 48
