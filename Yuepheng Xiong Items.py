@@ -47,6 +47,15 @@ class ToyotaCamry(Sedan):
         print("I started the engine by Turning the key")
 
 
+class NissianGTR(Sedan):
+    def __init__(self):
+        super(NissianGTR, self).__init__("NissianGTR")
+
+    def starting_the_engine(self):
+        self.engine_on = False
+        print("I started the GTR by stepping on the brake and pushing the start button")
+
+
 NineteenNinetyNine = HondaAccord()
 NineteenNinetyNine.amount_of_oil()
 NineteenNinetyNine.the_battery_supplying_to_starter()
@@ -57,13 +66,51 @@ NineteenNinetySix = ToyotaCamry()
 NineteenNinetySix.amount_of_fuel()
 NineteenNinetySix.starting_the_engine()
 
+TwoThousandEightTeen = NissianGTR()
+TwoThousandEightTeen.amount_of_fuel()
+TwoThousandEightTeen.starting_the_engine()
+
 
 class Case(object):
     def __init__(self, name):
-        self.name
+        self.name = name
 
 
-class HpCase(Case):
+class HdCase(Case):
     def __init__(self, name):
         super(Case, self).__init__(name)
         self.size = 48
+        self.ram_slots = 4
+        self.power_supply = None
+        self.hard_drive = None
+        self.motherboard = True
+
+    def how_big_the_case_is(self):
+        self.size = 48
+        print("The Case is 48 cm long.")
+
+    def the_slots_that_ram_could_be_put_in(self):
+        self.ram_slots = 4
+        print("There are four DDR3 1600 megahertz ram slots that I could put the ram in")
+
+    def the_power_supply(self):
+        self.power_supply = None
+        print("Hmmmm There's No Power Supply.... Guess I'll have to go looking for one that goes with the GTX 1060")
+
+    def the_hard_drive_or_ssd(self):
+        self.hard_drive = None
+        print("Ok It has no Hard drive either, I could go with an SSD, but I'm on a Budget here.")
+
+    def the_motherboard(self):
+        self.motherboard = None
+        print("At least It has a motherboard, although it is an OEM motherboard, might not be good for overclocking")
+
+
+class HdPavalionDesktop(HdCase):
+    def __init__(self):
+        super(HdPavalionDesktop, self).__init__("HdPavalionDesktop")
+
+
+Pavalion = HdPavalionDesktop
+Pavalion.size()
+Pavalion.ram_slots()
