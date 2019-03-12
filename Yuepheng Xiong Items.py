@@ -78,7 +78,7 @@ class Case(object):
 
 class HdCase(Case):
     def __init__(self, name):
-        super(Case, self).__init__(name)
+        super(HdCase, self).__init__(name)
         self.size = 48
         self.ram_slots = 4
         self.power_supply = None
@@ -106,11 +106,12 @@ class HdCase(Case):
         print("At least It has a motherboard, although it is an OEM motherboard, might not be good for overclocking")
 
 
-class HdPavalionDesktop(HdCase):
+class HdPavilionDesktop(HdCase):
     def __init__(self):
-        super(HdPavalionDesktop, self).__init__("HdPavalionDesktop")
+        super(HdPavilionDesktop, self).__init__("HdPavalionDesktop")
 
 
-Pavalion = HdPavalionDesktop
-Pavalion.size()
-Pavalion.ram_slots()
+Computer = HdPavilionDesktop()
+print(Computer.size)
+print(Computer.ram_slots)
+print(HdCase)
