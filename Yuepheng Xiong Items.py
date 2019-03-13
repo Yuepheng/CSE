@@ -1,3 +1,20 @@
+class Item(object):
+    def __init__(self, name):
+        self.name = name
+
+
+class Weapon(Item):
+    def __init__(self, name, damage):
+        super(Weapon, self).__init__(name)
+        self.damage = damage
+
+
+class Armor(Item):
+    def __init__(self, name, armor_amt):
+        super(Armor, self).__init__(name)
+        self.armor_amt = armor_amt
+
+
 class ModeOfTransportation(object):
     def __init__(self, name):
         self.name = name
@@ -85,33 +102,7 @@ class HdCase(Case):
         self.hard_drive = None
         self.motherboard = True
 
-    def how_big_the_case_is(self):
-        self.size = 48
-        print("The Case is 48 cm long.")
-
-    def the_slots_that_ram_could_be_put_in(self):
-        self.ram_slots = 4
-        print("There are four DDR3 1600 megahertz ram slots that I could put the ram in")
-
-    def the_power_supply(self):
-        self.power_supply = None
-        print("Hmmmm There's No Power Supply.... Guess I'll have to go looking for one that goes with the GTX 1060")
-
-    def the_hard_drive_or_ssd(self):
-        self.hard_drive = None
-        print("Ok It has no Hard drive either, I could go with an SSD, but I'm on a Budget here.")
-
-    def the_motherboard(self):
-        self.motherboard = None
-        print("At least It has a motherboard, although it is an OEM motherboard, might not be good for overclocking")
-
 
 class HdPavilionDesktop(HdCase):
     def __init__(self):
         super(HdPavilionDesktop, self).__init__("HdPavalionDesktop")
-
-
-Computer = HdPavilionDesktop()
-print(Computer.size)
-print(Computer.ram_slots)
-print(HdCase)
