@@ -106,3 +106,35 @@ class HdCase(Case):
 class HdPavilionDesktop(HdCase):
     def __init__(self):
         super(HdPavilionDesktop, self).__init__("HdPavalionDesktop")
+
+
+class Computerparts(object):
+    def __init__(self, name):
+        self.name = name
+
+
+class AcPowerSupply(Computerparts):
+    def __init__(self, name):
+        super(AcPowerSupply, self).__init__(name)
+        self.name = name
+        self.Watts = 500
+
+
+class Cpu(Computerparts):
+    def __init__(self, name):
+        super(Cpu, self).__init__(name)
+        self.name = name
+        self.Gigahertz = 3.20
+        self.Cores = 4
+        self.virtual_cores = 4
+
+
+class MotherBoard(Computerparts):
+    def __init__(self, name):
+        super(MotherBoard, self).__init__(name)
+        self.name = name
+        self.cpu_slot = True
+        self.ram_slots = 4
+        self.Pcix16 = True
+        self.power_supply_connector = True
+        self.hard_drive_connector_wires = True
