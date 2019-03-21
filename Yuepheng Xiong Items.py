@@ -138,3 +138,70 @@ class MotherBoard(Computerparts):
         self.Pcix16 = True
         self.power_supply_connector = True
         self.hard_drive_connector_wires = True
+
+
+class Memory(Computerparts):
+    def __init__(self, name, ddr3):
+        super(Memory, self).__init__(name)
+        self.name = name
+        self.type = ddr3
+        self.amount = 12
+        self.speed = 1600
+
+
+class HardDrive(Computerparts):
+    def __init__(self, name, ssd, windows10home):
+        super(HardDrive, self).__init__(name)
+        self.storage = 500
+        self.type = ssd
+        self.speed = 300
+        self.os = windows10home
+
+
+class PowerSupply(Computerparts):
+    def __init__(self, name, ac, generic):
+        super(PowerSupply, self).__init__(name)
+        self.power = 500
+        self.type = ac
+        self.size = generic
+
+
+class PhoneBrand(object):
+    def __init__(self, name):
+        self.name = name
+
+
+class SamSong(PhoneBrand):
+    def __init__(self, name):
+        super(SamSong, self).__init__(name)
+        self.name = name
+
+
+class GalaxyS4(SamSong):
+    def __init__(self, name, excellent):
+        super(GalaxyS4, self).__init__(name)
+        self.name = name
+        self.storage = 16
+        self.os = 4.4
+        self.camera = 13
+        self.condition = excellent
+
+
+class GalaxyS3(SamSong):
+    def __init__(self, name, excellent):
+        super(GalaxyS3, self).__init__(name)
+        self.name = name
+        self.storage = 32
+        self.os = 4.2
+        self.camera = 8
+        self.condition = excellent
+
+
+class GalaxyS7(SamSong):
+    def __init__(self, name, excellent):
+        super(GalaxyS7, self).__init__(name)
+        self.name = name
+        self.storage = 64
+        self.os = 7
+        self.camera = 14
+        self.condition = excellent
