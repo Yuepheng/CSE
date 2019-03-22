@@ -3,18 +3,6 @@ class Item(object):
         self.name = name
 
 
-class Weapon(Item):
-    def __init__(self, name, damage):
-        super(Weapon, self).__init__(name)
-        self.damage = damage
-
-
-class Armor(Item):
-    def __init__(self, name, armor_amt):
-        super(Armor, self).__init__(name)
-        self.armor_amt = armor_amt
-
-
 class ModeOfTransportation(object):
     def __init__(self, name):
         self.name = name
@@ -171,6 +159,12 @@ class PhoneBrand(object):
         self.name = name
 
 
+class Applie(PhoneBrand):
+    def __init__(self, name):
+        super(Applie, self).__init__(name)
+        self.name = name
+
+
 class SamSong(PhoneBrand):
     def __init__(self, name):
         super(SamSong, self).__init__(name)
@@ -205,3 +199,23 @@ class GalaxyS7(SamSong):
         self.os = 7
         self.camera = 14
         self.condition = excellent
+
+
+class APhone8(Applie):
+    def __init__(self, name, mint):
+        super(APhone8, self).__init__(name)
+        self.name = name
+        self.storage = 64
+        self.os = 12
+        self.camera = 13
+        self.condition = mint
+
+
+class APhone10F(Applie):
+    def __init__(self, name, good):
+        super(APhone10F, self).__init__(name)
+        self.name = name
+        self.storage = 128
+        self.os = 12
+        self.camera = 15
+        self.condition = good
