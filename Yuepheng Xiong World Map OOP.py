@@ -123,6 +123,22 @@ class Cpu2(Computerparts):
         self.virtual_cores = 12
 
 
+class Cpu3(Computerparts):
+    def __init__(self, name):
+        super(Cpu3, self).__init__(name)
+        self.Gigahertz = 2.40
+        self.Cores = 2
+        self.virtual_cores = 2
+
+
+class Cpu4(Computerparts):
+    def __init__(self, name):
+        super(Cpu4, self).__init__(name)
+        self.Gigahertz = 7.70
+        self.Cores = 16
+        self.virtual_cores = 16
+
+
 class MotherBoard(Computerparts):
     def __init__(self, name):
         super(MotherBoard, self).__init__(name)
@@ -188,7 +204,7 @@ class MemoryFaster(Computerparts):
 
 
 class HardDrive2(Computerparts):
-    def __init__(self, name, hdd, windows10pro):
+    def __init__(self, name, windows10pro,):
         super(HardDrive2, self).__init__(name)
         self.storage = 1000
         self.type = hdd
@@ -202,6 +218,15 @@ class HardDrive3(Computerparts):
         self.storage = 4000
         self.type = ssd
         self.speed = 500
+        self.os = windows10home
+
+
+class HardDrive4(Computerparts):
+    def __init__(self, name, ssd, windows10home):
+        super(HardDrive4, self).__init__(name)
+        self.storage = 8000
+        self.type = ssd
+        self.speed = 1000
         self.os = windows10home
 
 
@@ -330,13 +355,25 @@ class Player(object):
         # getattr(R19A, "north")
 
 
+CentralProcessingUnit4 = Cpu4(None)
+CentralProcessingUnit3 = Cpu3(None)
+CentralProcessingUnit2 = Cpu2(None)
+CentralProcessingUnit = Cpu(None)
+Computer = MotherBoard4(None)
+Computer = MotherBoard3(None)
+Computer = MotherBoard2(None)
+Computer = MotherBoard(None)
+Ram = MemoryFaster(None, ddr4=True)
+Ram = Memory(None, ddr3=True)
+SamSong = GalaxyS3(None, excellent=True)
+SamSong = GalaxyS4(None, excellent=True)
 SamSong = GalaxyS7(None, excellent=True)
 Applie = APhone8(None, mint=True)
 Toyota = ToyotaCamry()
-Nissian = NissianGTR()
+Nissan = NissianGTR()
 Honda = HondaAccord()
 hdd = HardDrive(None, ssd=True, windows10home=True,)
-hd2 = HardDrive2(None, hdd=True, windows10pro=True,)
+hd2 = HardDrive2(None, windows10pro=True,)
 hd3 = HardDrive3(None, ssd=True, windows10home=True,)
 
 
