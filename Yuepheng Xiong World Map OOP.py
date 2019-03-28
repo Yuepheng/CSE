@@ -375,6 +375,7 @@ Honda = HondaAccord()
 hdd = HardDrive(None, ssd=True, windows10home=True,)
 hd2 = HardDrive2(None, windows10pro=True,)
 hd3 = HardDrive3(None, ssd=True, windows10home=True,)
+hd = HardDrive4(None, ssd=True, windows10home=True)
 
 
 # Option 1 - Use the Variables, but fix later
