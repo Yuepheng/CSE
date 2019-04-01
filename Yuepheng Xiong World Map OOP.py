@@ -441,6 +441,16 @@ while playing:
     if command.lower() in ['q', 'quit', 'exit']:
         playing = False
     elif command in directions:
+        item = command[5:]   # For the 5th letter the computer will import that item
+        item_found = None
+        Name = Item
+        for item in player.current_location.items:
+            if item.name == item:
+                item_found = item
+            if item_found is not Name:
+                player.inventory.append(item_found)
+                player.current_location.items.remove(item_found)
+
         try:
             next_room = player.find_room(command)
             if next_room is None:      # If the direction you typed is invalid
