@@ -3,7 +3,7 @@ class Item(object):
         self.name = name
 
 
-class ModeOfTransportation(object):
+class ModeOfTransportation(Item):
     def __init__(self, name):
         super(ModeOfTransportation, self).__init__(name)
 
@@ -52,28 +52,13 @@ class ToyotaCamry(Sedan):
         print("I started the engine by Turning the key")
 
 
-class NissianGTR(Sedan):
+class NissanGTR(Sedan):
     def __init__(self):
-        super(NissianGTR, self).__init__("NissianGTR")
+        super(NissanGTR, self).__init__("NissianGTR")
 
     def starting_the_engine(self):
         self.engine_on = False
         print("I started the GTR by stepping on the brake and pushing the start button")
-
-
-NineteenNinetyNine = HondaAccord()
-NineteenNinetyNine.amount_of_oil()
-NineteenNinetyNine.the_battery_supplying_to_starter()
-NineteenNinetyNine.amount_of_fuel()
-NineteenNinetyNine.starting_the_engine()
-
-NineteenNinetySix = ToyotaCamry()
-NineteenNinetySix.amount_of_fuel()
-NineteenNinetySix.starting_the_engine()
-
-TwoThousandEightTeen = NissianGTR()
-TwoThousandEightTeen.amount_of_fuel()
-TwoThousandEightTeen.starting_the_engine()
 
 
 class Case(Item):
@@ -96,18 +81,18 @@ class HdPavilionDesktop(HdCase):
         super(HdPavilionDesktop, self).__init__("HdPavalionDesktop")
 
 
-class Computerparts(Item):
+class ComputerParts(Item):
     def __init__(self, name):
-        super(Computerparts, self).__init__(name)
+        super(ComputerParts, self).__init__(name)
 
 
-class AcPowerSupply(Computerparts):
+class AcPowerSupply(ComputerParts):
     def __init__(self, name):
         super(AcPowerSupply, self).__init__(name)
         self.Watts = 500
 
 
-class Cpu(Computerparts):
+class Cpu(ComputerParts):
     def __init__(self, name):
         super(Cpu, self).__init__(name)
         self.Gigahertz = 3.20
@@ -115,7 +100,7 @@ class Cpu(Computerparts):
         self.virtual_cores = 4
 
 
-class Cpu2(Computerparts):
+class Cpu2(ComputerParts):
     def __init__(self, name):
         super(Cpu2, self).__init__(name)
         self.Gigahertz = 4.50
@@ -123,7 +108,7 @@ class Cpu2(Computerparts):
         self.virtual_cores = 12
 
 
-class Cpu3(Computerparts):
+class Cpu3(ComputerParts):
     def __init__(self, name):
         super(Cpu3, self).__init__(name)
         self.Gigahertz = 2.40
@@ -131,7 +116,7 @@ class Cpu3(Computerparts):
         self.virtual_cores = 2
 
 
-class Cpu4(Computerparts):
+class Cpu4(ComputerParts):
     def __init__(self, name):
         super(Cpu4, self).__init__(name)
         self.Gigahertz = 7.70
@@ -139,7 +124,7 @@ class Cpu4(Computerparts):
         self.virtual_cores = 16
 
 
-class MotherBoard(Computerparts):
+class MotherBoard(ComputerParts):
     def __init__(self, name):
         super(MotherBoard, self).__init__(name)
         self.cpu_slot = True
@@ -151,7 +136,7 @@ class MotherBoard(Computerparts):
         self.cmos = True
 
 
-class MotherBoard3(Computerparts):
+class MotherBoard3(ComputerParts):
     def __init__(self, name):
         super(MotherBoard3, self).__init__(name)
         self.cpu_slot = True
@@ -163,7 +148,7 @@ class MotherBoard3(Computerparts):
         self.cmos = True
 
 
-class MotherBoard2(Computerparts):
+class MotherBoard2(ComputerParts):
     def __init__(self, name):
         super(MotherBoard2, self).__init__(name)
         self.cpu_slot = True
@@ -175,7 +160,7 @@ class MotherBoard2(Computerparts):
         self.cmos = False
 
 
-class MotherBoard4(Computerparts):
+class MotherBoard4(ComputerParts):
     def __init__(self, name):
         super(MotherBoard4, self).__init__(name)
         self.cpu_slot = True
@@ -187,7 +172,7 @@ class MotherBoard4(Computerparts):
         self.cmos = False
 
 
-class Memory(Computerparts):
+class Memory(ComputerParts):
     def __init__(self, name, ddr3):
         super(Memory, self).__init__(name)
         self.type = ddr3
@@ -195,7 +180,7 @@ class Memory(Computerparts):
         self.speed = 1600
 
 
-class MemoryFaster(Computerparts):
+class MemoryFaster(ComputerParts):
     def __init__(self, name, ddr4):
         super(MemoryFaster, self).__init__(name)
         self.type = ddr4
@@ -203,7 +188,7 @@ class MemoryFaster(Computerparts):
         self.speed = 2666
 
 
-class HardDrive2(Computerparts):
+class HardDrive2(ComputerParts):
     def __init__(self, name, windows10pro,):
         super(HardDrive2, self).__init__(name)
         self.storage = 1000
@@ -212,7 +197,7 @@ class HardDrive2(Computerparts):
         self.os = windows10pro
 
 
-class HardDrive3(Computerparts):
+class HardDrive3(ComputerParts):
     def __init__(self, name, ssd, windows10home):
         super(HardDrive3, self).__init__(name)
         self.storage = 4000
@@ -221,7 +206,7 @@ class HardDrive3(Computerparts):
         self.os = windows10home
 
 
-class HardDrive4(Computerparts):
+class HardDrive4(ComputerParts):
     def __init__(self, name, ssd, windows10home):
         super(HardDrive4, self).__init__(name)
         self.storage = 8000
@@ -230,7 +215,7 @@ class HardDrive4(Computerparts):
         self.os = windows10home
 
 
-class HardDrive(Computerparts):
+class HardDrive(ComputerParts):
     def __init__(self, name, ssd, windows10home):
         super(HardDrive, self).__init__(name)
         self.storage = 500
@@ -239,7 +224,7 @@ class HardDrive(Computerparts):
         self.os = windows10home
 
 
-class PowerSupply(Computerparts):
+class PowerSupply(ComputerParts):
     def __init__(self, name, ac, generic):
         super(PowerSupply, self).__init__(name)
         self.power = 500
@@ -247,7 +232,7 @@ class PowerSupply(Computerparts):
         self.size = generic
 
 
-class PowerSupply2(Computerparts):
+class PowerSupply2(ComputerParts):
     def __init__(self, name, ac, aftermarket):
         super(PowerSupply2, self).__init__(name)
         self.power = 770
@@ -370,7 +355,7 @@ SamSong2 = GalaxyS4(None, excellent=True)
 SamSong1 = GalaxyS7(None, excellent=True)
 Applie = APhone8(None, mint=True)
 Toyota = ToyotaCamry()
-Nissan = NissianGTR()
+Nissan = NissanGTR()
 Honda = HondaAccord()
 hdd = HardDrive(None, ssd=True, windows10home=True,)
 hd2 = HardDrive2(None, windows10pro=True,)
@@ -441,16 +426,6 @@ while playing:
     if command.lower() in ['q', 'quit', 'exit']:
         playing = False
     elif command in directions:
-        item = command[5:]   # For the 5th letter the computer will import that item
-        item_found = None
-        Name = Item
-        for item in player.current_location.items:
-            if item.name == item:
-                item_found = item
-            if item_found is not Name:
-                player.inventory.append(item_found)
-                player.current_location.items.remove(item_found)
-
         try:
             next_room = player.find_room(command)
             if next_room is None:      # If the direction you typed is invalid
@@ -458,5 +433,16 @@ while playing:
             player.move(next_room)
         except KeyError:
             print("I can't Go that Way")
+
+    elif "take" in command:
+        item = command[5:]  # For the 5th letter the computer will import that item
+        item_found = None
+        Name = Item
+        for item in player.current_location.items:
+            if item.name == item:
+                item_found = item
+            if item_found is not None:
+                player.inventory.append(item_found)
+                player.current_location.items.remove(item_found)
     else:
         print("Command Not recognized.")
