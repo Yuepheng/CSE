@@ -16,27 +16,6 @@ class Sedan(ModeOfTransportation):
         self.fuel_level = 100
         self.engine_on = False
 
-    def amount_of_oil(self):
-        self.Oil_Level -= .001
-        print("The Oil gauge reads that I still have LOTS of oil")
-
-    def the_battery_supplying_to_starter(self):
-        self.battery_voltage -= .005
-        print("The voltage meter reads that it is between 12 and 16 volts")
-
-    def amount_of_fuel(self):
-        self.fuel_level -= .0001
-        print("The Fuel gauge needle is on F for Full")
-
-    def starting_the_engine(self):
-        self.engine_on = True
-        print("I started the engine by stepping on the clutch and turning the key")
-
-    def move(self):
-        self.Oil_Level -= .001
-        self.fuel_level -= .0001
-        print("Good thing this Sedan has Power steering")
-
 
 class HondaAccord(Sedan):
     def __init__(self):
@@ -47,18 +26,10 @@ class ToyotaCamry(Sedan):
     def __init__(self):
         super(ToyotaCamry, self).__init__("ToyotaCamry")
 
-    def starting_the_engine(self):
-        self.engine_on = False
-        print("I started the engine by Turning the key")
-
 
 class NissanGTR(Sedan):
     def __init__(self):
         super(NissanGTR, self).__init__("NissianGTR")
-
-    def starting_the_engine(self):
-        self.engine_on = False
-        print("I started the GTR by stepping on the brake and pushing the start button")
 
 
 class Case(Item):
@@ -104,8 +75,8 @@ class Cpu2(ComputerParts):
     def __init__(self, name):
         super(Cpu2, self).__init__(name)
         self.Gigahertz = 4.50
-        self.Cores = 8
-        self.virtual_cores = 12
+        self.Cores = 4
+        self.virtual_cores = 8
 
 
 class Cpu3(ComputerParts):
@@ -119,7 +90,7 @@ class Cpu3(ComputerParts):
 class Cpu4(ComputerParts):
     def __init__(self, name):
         super(Cpu4, self).__init__(name)
-        self.Gigahertz = 7.70
+        self.Gigahertz = 8.4
         self.Cores = 16
         self.virtual_cores = 16
 
@@ -348,8 +319,8 @@ Computer4 = MotherBoard4(None)
 Computer3 = MotherBoard3(None)
 Computer2 = MotherBoard2(None)
 Computer1 = MotherBoard(None)
-Ram2 = MemoryFaster(None, ddr4=True)
-Ram1 = Memory(None, ddr3=True)
+Ram2 = MemoryFaster(None, ddr4=2400)
+Ram1 = Memory(None, ddr3=1600)
 SamSong3 = GalaxyS3(None, excellent=True)
 SamSong2 = GalaxyS4(None, excellent=True)
 SamSong1 = GalaxyS7(None, excellent=True)
@@ -357,10 +328,10 @@ Applie = APhone8(None, mint=True)
 Toyota = ToyotaCamry()
 Nissan = NissanGTR()
 Honda = HondaAccord()
-hdd = HardDrive(None, ssd=True, windows10home=True,)
+hdd = HardDrive(None, ssd=600, windows10home=True,)
 hd2 = HardDrive2(None, windows10pro=True,)
-hd3 = HardDrive3(None, ssd=True, windows10home=True,)
-hd = HardDrive4(None, ssd=True, windows10home=True)
+hd3 = HardDrive3(None, ssd=256, windows10home=True,)
+hd = HardDrive4(None, ssd=440, windows10home=True)
 
 
 # Option 1 - Use the Variables, but fix later
