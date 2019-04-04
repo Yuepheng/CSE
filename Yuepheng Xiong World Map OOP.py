@@ -90,7 +90,7 @@ class Cpu3(ComputerParts):
 class Cpu4(ComputerParts):
     def __init__(self, name):
         super(Cpu4, self).__init__(name)
-        self.Gigahertz = 8.4
+        self.Gigahertz = 8.4           # You'd think that Intel would have the highest clocking CPU, but no its AMD
         self.Cores = 16
         self.virtual_cores = 16
 
@@ -271,6 +271,36 @@ class APhone10F(Applie):
         self.condition = good
 
 
+class Food(Item):
+    def __init__(self, name):
+        super(Food, self).__init__(name)
+
+
+class HamAndCheese(Food):
+    def __init__(self, name):
+        super(HamAndCheese, self).__init__(name)
+
+
+class Marshmellows(Food):
+    def __init__(self, name):
+        super(Marshmellows, self).__init__(name)
+
+
+class Rice(Food):
+    def __init__(self, name):
+        super(Rice, self).__init__(name)
+
+
+class Sushi(Food):
+    def __init__(self, name):
+        super(Sushi, self).__init__(name)
+
+
+class Sausages(Food):
+    def __init__(self, name):
+        super(Sausages, self).__init__(name)
+
+
 class Room(object):
     def __init__(self, description, name=None, north=None, south=None, east=None, west=None, southeast=None,
                  northeast=None, items=None):
@@ -311,6 +341,11 @@ class Player(object):
         # getattr(R19A, "north")
 
 
+PorkAndCheese = HamAndCheese(None)
+WhiteSoftCubes = Marshmellows(None)
+WhiteSeeds = Rice(None)
+Wiener = Sausages(None)
+RiceAndSeaweed = Sushi(None)
 CentralProcessingUnit4 = Cpu4(None)
 CentralProcessingUnit3 = Cpu3(None)
 CentralProcessingUnit2 = Cpu2(None)
@@ -335,12 +370,13 @@ hd = HardDrive4(None, ssd=440, windows10home=True)
 
 
 # Option 1 - Use the Variables, but fix later
-R19A = Room("Mr. Wade's Room", "This is the room you are in")
-parking_lot = Room("The Parking Lot", "THere are a few cars parked here", None, R19A)
-Amphitheater = Room("The stage Outside", "There might be some items here", None, R19A)
+R19A = Room("Mr. Wade's Room", "This is the room you are in", None, None, None, None, None, None, [hd])
+parking_lot = Room("The Parking Lot", "THere are a few cars parked here", None, R19A, [Toyota], [Nissan], [Honda])
+Amphitheater = Room("The stage Outside", "There might be some items here", None, R19A,)
 Cafeteria = Room("The Place to get food and chill", "There is some leftover non eaten baked ham and cheese bars and"
-                                                    "there might be some items here", None, Amphitheater,)
-SB20 = Room("Mr Yang's Room", "This guy loves Anime", None, Cafeteria, parking_lot)
+                                                    "there might be some items here", None, Amphitheater,
+                 [HamAndCheese], [Sushi], [Sausages], [Rice],)
+SB20 = Room("Mr Yang's Room", "This guy loves Anime", None, Cafeteria, parking_lot, [Marshmellows], [Cpu4])
 Downtown_Dresno = Room("The City of Dresno", "There are a lot of work offices here", None, parking_lot)
 Ethan_James_High_School = Room("Ethan James High School Grades 9-12", "The School", None, Downtown_Dresno)
 Grandparents_House = Room("The house that my grandparents live in.", "There could be some items here", None,
@@ -392,6 +428,7 @@ playing = True
 while playing:
     print(player.current_location.name)  # The player has a current location and that location has a name
     print(player.current_location.description)  # The player has a current location and that location has a description
+    print(player.current_location.items)
 
     command = input(">_")
     if command.lower() in ['q', 'quit', 'exit']:

@@ -41,8 +41,8 @@ class Tesla(Car):
 
 
 guled_car = Viper()
-guled_car.start_engine()
 guled_car.move_foward()
+guled_car.start_engine()
 guled_car.turn_left()
 guled_car.move_foward()
 guled_car.turn_off()
