@@ -303,6 +303,15 @@ class Gtx1070(GraphicsCard):
         self.performance = excellent
 
 
+class Gtx5010(GraphicsCard):
+    def __init__(self, name, outofthisworld):
+        super(Gtx5010, self).__init__(name)
+        self.memory = 16
+        self.cudacores = 50000
+        self.power = 1400
+        self.performance = outofthisworld
+
+
 class Gtx1080(GraphicsCard):
     def __init__(self, name, excellent):
         super(Gtx1080, self).__init__(name)
@@ -418,6 +427,7 @@ class Player(object):
         # getattr(R19A, "north")
 
 
+GraphicsCard8 = Gtx5010("Gtx5010", outofthisworld=True)
 GraphicsCard7 = Rtx2080TI(None, advance=True)
 GraphicsCard6 = Rx590(None, excellent=True)
 GraphicsCard5 = Rx470(None, good=True)
@@ -426,47 +436,47 @@ GraphicsCard3 = Gtx1080(None, excellent=True)
 GraphicsCard2 = Gtx1070(None, excellent=True)
 GraphicsCard1 = Gtx1050(None, good=True)
 PorkAndCheese = HamAndCheese(None)
-WhiteSoftCubes = Marshmellows(None)
-WhiteSeeds = Rice(None)
-Wiener = Sausages(None)
-RiceAndSeaweed = Sushi(None)
-CentralProcessingUnit4 = Cpu4(None)
-CentralProcessingUnit3 = Cpu3(None)
-CentralProcessingUnit2 = Cpu2(None)
-CentralProcessingUnit = Cpu(None)
-Computer4 = MotherBoard4(None)
-Computer3 = MotherBoard3(None)
-Computer2 = MotherBoard2(None)
-Computer1 = MotherBoard(None)
-Ram2 = MemoryFaster(None, ddr4=2400)
-Ram1 = Memory(None, ddr3=1600)
-SamSong3 = GalaxyS3(None, excellent=True)
-SamSong2 = GalaxyS4(None, excellent=True)
-SamSong1 = GalaxyS7(None, excellent=True)
-Applie = APhone8(None, mint=True)
+WhiteSoftCubes = Marshmellows("Marshmellows")
+WhiteSeeds = Rice("White Rice")
+HotDog = Sausages("Vietnamese Pork Sausages")
+RiceAndSeaweed = Sushi("Sushi")
+CentralProcessingUnit4 = Cpu4("AND EX-8350")
+CentralProcessingUnit3 = Cpu3("Intail Xeon EYE-1623")
+CentralProcessingUnit2 = Cpu2("Intail Core EYE7 7700K")
+CentralProcessingUnit = Cpu("AND Phenom 2 X4 955")
+Computer4 = MotherBoard4("ZombieWare 123Abc Founders Edition Motherboard")
+Computer3 = MotherBoard3("Asos X-467 Motherboard")
+Computer2 = MotherBoard2("Dull 3746 Motherboard")
+Computer1 = MotherBoard("Lanovo S-462 Motherboard")
+Ram2 = MemoryFaster("Ram2", ddr4=2400)
+Ram1 = Memory("Ram", ddr3=1600)
+SamSong3 = GalaxyS3("Samsong Galaxy Sing3", excellent=True)
+SamSong2 = GalaxyS4("Samsong Galaxy Sing4", excellent=True)
+SamSong1 = GalaxyS7("Samsong Galaxy Sing7", excellent=True)
+Applie = APhone8(APhone8, mint=True)
 Toyota = ToyotaCamry()
 Nissan = NissanGTR()
 Honda = HondaAccord()
-hdd = HardDrive(None, ssd=600, windows10home=True,)
-hdd2 = HardDrive2(None, windows10pro=True,)
-hdd3 = HardDrive3(None, ssd=256, windows10home=True,)
-hdd4 = HardDrive4(None, ssd=440, windows10home=True)
+hdd = HardDrive("HardDrive1", ssd=600, windows10home=True,)
+hdd2 = HardDrive2("HardDrive2", windows10pro=True,)
+hdd3 = HardDrive3("HardDrive3", ssd=256, windows10home=True,)
+hdd4 = HardDrive4("HardDrive4", ssd=440, windows10home=True)
 
 
 # Option 1 - Use the Variables, but fix later
 R19A = Room("Mr. Wade's Room", "This is the room you are in", None, None, None, None, None, None, [HardDrive3],
-            [GraphicsCard7], [GraphicsCard2], [GraphicsCard5])
+            [GraphicsCard7], [GraphicsCard2], [GraphicsCard5], [Computer4])
 parking_lot = Room("The Parking Lot", "THere are a few cars parked here", None, R19A, [Toyota], [Nissan], [Honda])
 Amphitheater = Room("The stage Outside", "There might be some items here", None, R19A,)
 Cafeteria = Room("The Place to get food and chill", "There is some leftover non eaten baked ham and cheese bars and"
                                                     "there might be some items here", None, Amphitheater,
-                 [PorkAndCheese], [RiceAndSeaweed], [Wiener], [WhiteSeeds],)
+                 [PorkAndCheese], [RiceAndSeaweed], [HotDog], [WhiteSeeds],)
 SB20 = Room("Mr Yang's Room", "This guy loves Anime", None, Cafeteria, parking_lot, [WhiteSoftCubes], [Cpu4],
             [GraphicsCard3])
 Downtown_Dresno = Room("The City of Dresno", "There are a lot of work offices here", None, parking_lot)
 Ethan_James_High_School = Room("Ethan James High School Grades 9-12", "The School", None, Downtown_Dresno)
 Grandparents_House = Room("The house that my grandparents live in.", "There could be some items here", None,
-                          Ethan_James_High_School, Downtown_Dresno, [Computer4], [hdd], [Computer2], [GraphicsCard4])
+                          Ethan_James_High_School, Downtown_Dresno, [hdd], [Computer2], [GraphicsCard4])
 Parents_House = Room("My mom, dad, 2 sisters and 1 brother live here", "There could be some helpful items here", None,
                      Grandparents_House, [Ram1], [Cpu2], [Computer3], [GraphicsCard1])
 Office = Room("The Front desk of Ethan James High school", "You could talk to the VPs, assistants, and staff", None,
