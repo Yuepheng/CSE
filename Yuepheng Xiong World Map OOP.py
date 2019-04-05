@@ -271,6 +271,83 @@ class APhone10F(Applie):
         self.condition = good
 
 
+class GraphicsCard(ComputerParts):
+    def __init__(self, name):
+        super(GraphicsCard, self).__init__(name)
+
+
+class Gtx1050(GraphicsCard):
+    def __init__(self, name, good):
+        super(Gtx1050, self).__init__(name)
+        self.memory = 2
+        self.cudacores = 768
+        self.power = 300
+        self.performance = good
+
+
+class HD8570(GraphicsCard):
+    def __init__(self, name, ok):
+        super(HD8570, self).__init__(name)
+        self.memory = 1
+        self.cudacores = 384
+        self.power = 400
+        self.performance = ok
+
+
+class Gtx1070(GraphicsCard):
+    def __init__(self, name, excellent):
+        super(Gtx1070, self).__init__(name)
+        self.memory = 8
+        self.cudacores = 2432
+        self.power = 500
+        self.performance = excellent
+
+
+class Gtx1080(GraphicsCard):
+    def __init__(self, name, excellent):
+        super(Gtx1080, self).__init__(name)
+        self.memory = 8
+        self.cudacores = 2560
+        self.power = 900
+        self.performance = excellent
+
+
+class Rx590(GraphicsCard):
+    def __init__(self, name, excellent):
+        super(Rx590, self).__init__(name)
+        self.memory = 8
+        self.cudacores = 2304
+        self.power = 700
+        self.performance = excellent
+
+
+class Rx470(GraphicsCard):
+    def __init__(self, name, good):
+        super(Rx470, self).__init__(name)
+        self.memory = 4
+        self.cudacores = 2048
+        self.power = 500
+        self.performance = good
+
+
+class Rtx2080TI(GraphicsCard):
+    def __init__(self, name, advance):
+        super(Rtx2080TI, self).__init__(name)
+        self.memory = 11
+        self.cudacores = 4352
+        self.power = 650
+        self.performance = advance
+
+
+class Gtx1660(GraphicsCard):
+    def __init__(self, name, excellent):
+        super(Gtx1660, self).__init__(name)
+        self.memory = 6
+        self.cudacores = 1536
+        self.power = 450
+        self.performance = excellent
+
+
 class Food(Item):
     def __init__(self, name):
         super(Food, self).__init__(name)
@@ -341,6 +418,13 @@ class Player(object):
         # getattr(R19A, "north")
 
 
+GraphicsCard7 = Rtx2080TI(None, advance=True)
+GraphicsCard6 = Rx590(None, excellent=True)
+GraphicsCard5 = Rx470(None, good=True)
+GraphicsCard4 = Gtx1660(None, excellent=True)
+GraphicsCard3 = Gtx1080(None, excellent=True)
+GraphicsCard2 = Gtx1070(None, excellent=True)
+GraphicsCard1 = Gtx1050(None, good=True)
 PorkAndCheese = HamAndCheese(None)
 WhiteSoftCubes = Marshmellows(None)
 WhiteSeeds = Rice(None)
@@ -364,34 +448,37 @@ Toyota = ToyotaCamry()
 Nissan = NissanGTR()
 Honda = HondaAccord()
 hdd = HardDrive(None, ssd=600, windows10home=True,)
-hd2 = HardDrive2(None, windows10pro=True,)
-hd3 = HardDrive3(None, ssd=256, windows10home=True,)
-hd = HardDrive4(None, ssd=440, windows10home=True)
+hdd2 = HardDrive2(None, windows10pro=True,)
+hdd3 = HardDrive3(None, ssd=256, windows10home=True,)
+hdd4 = HardDrive4(None, ssd=440, windows10home=True)
 
 
 # Option 1 - Use the Variables, but fix later
-R19A = Room("Mr. Wade's Room", "This is the room you are in", None, None, None, None, None, None, [hd])
+R19A = Room("Mr. Wade's Room", "This is the room you are in", None, None, None, None, None, None, [HardDrive3],
+            [GraphicsCard7], [GraphicsCard2], [GraphicsCard5])
 parking_lot = Room("The Parking Lot", "THere are a few cars parked here", None, R19A, [Toyota], [Nissan], [Honda])
 Amphitheater = Room("The stage Outside", "There might be some items here", None, R19A,)
 Cafeteria = Room("The Place to get food and chill", "There is some leftover non eaten baked ham and cheese bars and"
                                                     "there might be some items here", None, Amphitheater,
-                 [HamAndCheese], [Sushi], [Sausages], [Rice],)
-SB20 = Room("Mr Yang's Room", "This guy loves Anime", None, Cafeteria, parking_lot, [Marshmellows], [Cpu4])
+                 [PorkAndCheese], [RiceAndSeaweed], [Wiener], [WhiteSeeds],)
+SB20 = Room("Mr Yang's Room", "This guy loves Anime", None, Cafeteria, parking_lot, [WhiteSoftCubes], [Cpu4],
+            [GraphicsCard3])
 Downtown_Dresno = Room("The City of Dresno", "There are a lot of work offices here", None, parking_lot)
 Ethan_James_High_School = Room("Ethan James High School Grades 9-12", "The School", None, Downtown_Dresno)
 Grandparents_House = Room("The house that my grandparents live in.", "There could be some items here", None,
-                          Ethan_James_High_School, Downtown_Dresno)
+                          Ethan_James_High_School, Downtown_Dresno, [Computer4], [hdd], [Computer2], [GraphicsCard4])
 Parents_House = Room("My mom, dad, 2 sisters and 1 brother live here", "There could be some helpful items here", None,
-                     Grandparents_House)
+                     Grandparents_House, [Ram1], [Cpu2], [Computer3], [GraphicsCard1])
 Office = Room("The Front desk of Ethan James High school", "You could talk to the VPs, assistants, and staff", None,
-              R19A)
+              R19A, [Computer1])
 San_Framsico = Room("The City of Rich People AKA San Framsico", "I might need some items in the stores here",  None,
-                    Downtown_Dresno)
-Cousins_House = Room("My Cousins live here", "They might be of help to me", None, Parents_House)
-R13B = Room("Mr. Dawson's Room", "There could be some useful items here", None, SB20, R19A)
-SL15 = Room("Mrs. Hazen's Biology Room", "There might be some useful items here", None, R13B, SB20, R19A,)
+                    Downtown_Dresno, [SamSong3], [SamSong1], [Ram2], [Cpu3])
+Cousins_House = Room("My Cousins live here", "They might be of help to me", None, Parents_House, [Computer2],
+                     [SamSong2])
+R13B = Room("Mr. Dawson's Room", "There could be some useful items here", None, SB20, R19A, [Cpu3], [APhone8])
+SL15 = Room("Mrs. Hazen's Biology Room", "There might be some useful items here", None, R13B, SB20, R19A, [APhone10F])
 J_Mart = Room("The J mart to get food, technology, clothing etc.", "I might need some of the useful items here", None,
-              Downtown_Dresno, Parents_House)
+              Downtown_Dresno, Parents_House, [hdd4], [GraphicsCard6], [Cpu])
 
 
 Parents_House.south = J_Mart
