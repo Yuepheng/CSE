@@ -427,15 +427,15 @@ class Player(object):
         # getattr(R19A, "north")
 
 
-GraphicsCard8 = Gtx5010("Gtx5010", outofthisworld=True)
-GraphicsCard7 = Rtx2080TI(None, advance=True)
-GraphicsCard6 = Rx590(None, excellent=True)
-GraphicsCard5 = Rx470(None, good=True)
-GraphicsCard4 = Gtx1660(None, excellent=True)
-GraphicsCard3 = Gtx1080(None, excellent=True)
-GraphicsCard2 = Gtx1070(None, excellent=True)
-GraphicsCard1 = Gtx1050(None, good=True)
-PorkAndCheese = HamAndCheese(None)
+GraphicsCard8 = Gtx5010("Nvidia Geforce Gtx5010", outofthisworld=True)
+GraphicsCard7 = Rtx2080TI("Nvidia Geforce Rtx 2080TI Founder's Edition", advance=True)
+GraphicsCard6 = Rx590("A.N.D Radeon Rx 590", excellent=True)
+GraphicsCard5 = Rx470("A.N.D Radeon Rx 470", good=True)
+GraphicsCard4 = Gtx1660("Nvidia Geforce Gtx 1660", excellent=True)
+GraphicsCard3 = Gtx1080("Nvidia Geforce Gtx 1080 Founder's Edition", excellent=True)
+GraphicsCard2 = Gtx1070("Nvidia Geforce Gtx 1070", excellent=True)
+GraphicsCard1 = Gtx1050("Nvidia Geforce Gtx 1050", good=True)
+PorkAndCheese = HamAndCheese("HamAndCheese")
 WhiteSoftCubes = Marshmellows("Marshmellows")
 WhiteSeeds = Rice("White Rice")
 HotDog = Sausages("Vietnamese Pork Sausages")
@@ -482,7 +482,7 @@ Parents_House = Room("My mom, dad, 2 sisters and 1 brother live here", "There co
 Office = Room("The Front desk of Ethan James High school", "You could talk to the VPs, assistants, and staff", None,
               R19A, [Computer1])
 San_Framsico = Room("The City of Rich People AKA San Framsico", "I might need some items in the stores here",  None,
-                    Downtown_Dresno, [SamSong3], [SamSong1], [Ram2], [Cpu3])
+                    Downtown_Dresno, [SamSong3], [SamSong1], [Ram2], [Cpu3], [GraphicsCard8])
 Cousins_House = Room("My Cousins live here", "They might be of help to me", None, Parents_House, [Computer2],
                      [SamSong2])
 R13B = Room("Mr. Dawson's Room", "There could be some useful items here", None, SB20, R19A, [Cpu3], [APhone8])
