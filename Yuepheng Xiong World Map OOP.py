@@ -160,10 +160,10 @@ class MemoryFaster(ComputerParts):
 
 
 class HardDrive2(ComputerParts):
-    def __init__(self, name, windows10pro,):
+    def __init__(self, name, hd, windows10pro):
         super(HardDrive2, self).__init__(name)
         self.storage = 1000
-        self.type = hdd
+        self.type = hd
         self.speed = 100
         self.os = windows10pro
 
@@ -427,29 +427,29 @@ class Player(object):
         # getattr(R19A, "north")
 
 
-GraphicsCard8 = Gtx5010("Nvidia Geforce Gtx5010", outofthisworld=True)
-GraphicsCard7 = Rtx2080TI("Nvidia Geforce Rtx 2080TI Founder's Edition", advance=True)
+GraphicsCard8 = Gtx5010("Aidivn Xforce Gtx5010", outofthisworld=True)
+GraphicsCard7 = Rtx2080TI("Aidivn Xforce Rtx 2080TI Founder's Edition", advance=True)
 GraphicsCard6 = Rx590("A.N.D Radeon Rx 590", excellent=True)
 GraphicsCard5 = Rx470("A.N.D Radeon Rx 470", good=True)
-GraphicsCard4 = Gtx1660("Nvidia Geforce Gtx 1660", excellent=True)
-GraphicsCard3 = Gtx1080("Nvidia Geforce Gtx 1080 Founder's Edition", excellent=True)
-GraphicsCard2 = Gtx1070("Nvidia Geforce Gtx 1070", excellent=True)
-GraphicsCard1 = Gtx1050("Nvidia Geforce Gtx 1050", good=True)
+GraphicsCard4 = Gtx1660("Aidivn Xforce Ytx 1660", excellent=True)
+GraphicsCard3 = Gtx1080("Aidivn Xforce Ytx 1080 Founder's Edition", excellent=True)
+GraphicsCard2 = Gtx1070("Aidivn Xforce Ytx 1070", excellent=True)
+GraphicsCard1 = Gtx1050("Aidivn Xforce Ytx 1050", good=True)
 PorkAndCheese = HamAndCheese("HamAndCheese")
 WhiteSoftCubes = Marshmellows("Marshmellows")
 WhiteSeeds = Rice("White Rice")
 HotDog = Sausages("Vietnamese Pork Sausages")
 RiceAndSeaweed = Sushi("Sushi")
-CentralProcessingUnit4 = Cpu4("AND EX-8350")
+CentralProcessingUnit4 = Cpu4("A.N.D EX-8350")
 CentralProcessingUnit3 = Cpu3("Intail Xeon EYE-1623")
 CentralProcessingUnit2 = Cpu2("Intail Core EYE7 7700K")
-CentralProcessingUnit = Cpu("AND Phenom 2 X4 955")
+CentralProcessingUnit = Cpu("A.N.D Phenom 2 X4 955")
 Computer4 = MotherBoard4("ZombieWare 123Abc Founders Edition Motherboard")
 Computer3 = MotherBoard3("Asos X-467 Motherboard")
 Computer2 = MotherBoard2("Dull 3746 Motherboard")
 Computer1 = MotherBoard("Lanovo S-462 Motherboard")
-Ram2 = MemoryFaster("Ram2", ddr4=2400)
-Ram1 = Memory("Ram", ddr3=1600)
+Ram2 = MemoryFaster("Dinosair DDR4 2400 Megahertz Ram", ddr4=2400)
+Ram1 = Memory("Samsong DDR3 1600 Megahertz Ram", ddr3=1600)
 SamSong3 = GalaxyS3("Samsong Galaxy Sing3", excellent=True)
 SamSong2 = GalaxyS4("Samsong Galaxy Sing4", excellent=True)
 SamSong1 = GalaxyS7("Samsong Galaxy Sing7", excellent=True)
@@ -457,15 +457,15 @@ Applie = APhone8(APhone8, mint=True)
 Toyota = ToyotaCamry()
 Nissan = NissanGTR()
 Honda = HondaAccord()
-hdd = HardDrive("HardDrive1", ssd=600, windows10home=True,)
-hdd2 = HardDrive2("HardDrive2", windows10pro=True,)
-hdd3 = HardDrive3("HardDrive3", ssd=256, windows10home=True,)
-hdd4 = HardDrive4("HardDrive4", ssd=440, windows10home=True)
+hdd = HardDrive("500Gb Samsong Solid State Drive", ssd=500, windows10home=True,)
+hdd2 = HardDrive2("Western Analong 2 Tereabyte HardDrive", hd=2000, windows10pro=True,)
+hdd3 = HardDrive3("Intel 256gb Solid State Drive", ssd=256, windows10home=True,)
+hdd4 = HardDrive4("Samsong 1Tb Solid State Drive", ssd=1000, windows10home=True)
 
 
 # Option 1 - Use the Variables, but fix later
-R19A = Room("Mr. Wade's Room", "This is the room you are in", None, None, None, None, None, None, [HardDrive3],
-            [GraphicsCard7], [GraphicsCard2], [GraphicsCard5], [Computer4])
+R19A = Room("Mr. Wade's Room", "This is the room you are in", None, None, None, None, None, None, [HardDrive3,
+            GraphicsCard7, GraphicsCard2, GraphicsCard5, Computer4],)
 parking_lot = Room("The Parking Lot", "THere are a few cars parked here", None, R19A, [Toyota], [Nissan], [Honda])
 Amphitheater = Room("The stage Outside", "There might be some items here", None, R19A,)
 Cafeteria = Room("The Place to get food and chill", "There is some leftover non eaten baked ham and cheese bars and"
@@ -517,8 +517,11 @@ R19A.north = parking_lot  # Creates a Key when You type north
 # parking_lot = Room("The Parking Lot", None, R19A)
 
 player = Player(R19A)
+player.inventory.append(Item)
 
 directions = ['north', 'south', 'east', 'west', 'southeast', 'northeast']
+short_directions = ['n', 's', 'e', 'w', ]
+
 playing = True
 
 # Controller
@@ -528,6 +531,11 @@ while playing:
     print(player.current_location.items)
 
     command = input(">_")
+
+    if command in short_directions:
+        pos = short_directions.index(command)
+        command = directions[pos]
+
     if command.lower() in ['q', 'quit', 'exit']:
         playing = False
     elif command in directions:
@@ -543,9 +551,9 @@ while playing:
         item = command[5:]  # For the 5th letter the computer will import that item
         item_found = None
         Name = Item
-        for item in player.current_location.items:
-            if item.name == item:
-                item_found = item
+        for item in player.current_location.items:    # For the Item in the player's current location
+            if item.name == item:           # If the item name is shown
+                item_found = item       # The item is show
             if item_found is not None:
                 player.inventory.append(item_found)
                 player.current_location.items.remove(item_found)

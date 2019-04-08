@@ -63,7 +63,7 @@ print(ToyotaCarModels)
 # Practice time...
 
 
-HondaCarmodels = ['civic', 'accord', 'prelude', 'insight', ]
+HondaCarmodels = ['civic', 'accord', 'prelude', 'insight',]
 HondaCarmodels.append('civicSI')
 print(HondaCarmodels)
 
