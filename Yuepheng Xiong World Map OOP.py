@@ -464,7 +464,7 @@ hdd4 = HardDrive4("Samsong 1Tb Solid State Drive", ssd=1000, windows10home=True)
 
 
 # Option 1 - Use the Variables, but fix later
-R19A = Room("Mr. Wade's Room", "This is the room you are in", None, None, None, None, None, None, [HardDrive3,
+R19A = Room("Mr. Wade's Room", "This is the room you are in", None, None, None, None, None, None, [hdd3,
             GraphicsCard7, GraphicsCard2, GraphicsCard5, Computer4],)
 parking_lot = Room("The Parking Lot", "THere are a few cars parked here", None, R19A, [Toyota], [Nissan], [Honda])
 Amphitheater = Room("The stage Outside", "There might be some items here", None, R19A,)
@@ -528,7 +528,10 @@ playing = True
 while playing:
     print(player.current_location.name)  # The player has a current location and that location has a name
     print(player.current_location.description)  # The player has a current location and that location has a description
-    print(player.current_location.items)
+    print()
+    print("The following items are in the room:")
+    for item in player.current_location.items:
+        print(item.name)
 
     command = input(">_")
 
