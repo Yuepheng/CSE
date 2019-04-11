@@ -427,16 +427,16 @@ class Player(object):
         # getattr(R19A, "north")
 
 
-GraphicsCard8 = Gtx5010("Aidivn Xforce Gtx5010", outofthisworld=True)
-GraphicsCard7 = Rtx2080TI("Aidivn Xforce Rtx 2080TI Founder's Edition", advance=True)
-GraphicsCard6 = Rx590("A.N.D Radeon Rx 590", excellent=True)
-GraphicsCard5 = Rx470("A.N.D Radeon Rx 470", good=True)
+GraphicsCard8 = Gtx5010("Aidivn Xforce Ytx5010", outofthisworld=True)
+GraphicsCard7 = Rtx2080TI("Aidivn Xforce Ltx 2080TI Founder's Edition", advance=True)
+GraphicsCard6 = Rx590("A.N.D Radeno Ex 590", excellent=True)
+GraphicsCard5 = Rx470("A.N.D Radeno Ex 470", good=True)
 GraphicsCard4 = Gtx1660("Aidivn Xforce Ytx 1660", excellent=True)
 GraphicsCard3 = Gtx1080("Aidivn Xforce Ytx 1080 Founder's Edition", excellent=True)
 GraphicsCard2 = Gtx1070("Aidivn Xforce Ytx 1070", excellent=True)
 GraphicsCard1 = Gtx1050("Aidivn Xforce Ytx 1050", good=True)
 PorkAndCheese = HamAndCheese("HamAndCheese")
-WhiteSoftCubes = Marshmellows("Marshmellows")
+WhiteSoftCylinders = Marshmellows("Marshmellows")
 WhiteSeeds = Rice("White Rice")
 HotDog = Sausages("Vietnamese Pork Sausages")
 RiceAndSeaweed = Sushi("Sushi")
@@ -464,15 +464,17 @@ hdd4 = HardDrive4("Samsong 1Tb Solid State Drive", ssd=1000, windows10home=True)
 
 
 # Option 1 - Use the Variables, but fix later
-R19A = Room("Mr. Wade's Room", "This is the room you are in", None, None, None, None, None, None, [hdd3,
-            GraphicsCard7, GraphicsCard2, GraphicsCard5, Computer4],)
-parking_lot = Room("The Parking Lot", "THere are a few cars parked here", None, R19A, [Toyota], [Nissan], [Honda])
+R19A = Room("Mr. Wade's Room", "This is the room you are in and You plan to get parts and build THE ULTIMATE GAMING "
+                               "COMPUTER",
+            None, None, None, None, None, None, [hdd3, GraphicsCard7, GraphicsCard2, GraphicsCard5, Computer4],)
+parking_lot = Room("The Parking Lot", "There are a few cars parked here", None, None, None, None, None, R19A,
+                   [Toyota, Nissan, Honda], )
 Amphitheater = Room("The stage Outside", "There might be some items here", None, R19A,)
 Cafeteria = Room("The Place to get food and chill", "There is some leftover non eaten baked ham and cheese bars and"
                                                     "there might be some items here", None, Amphitheater,
                  [PorkAndCheese], [RiceAndSeaweed], [HotDog], [WhiteSeeds],)
-SB20 = Room("Mr Yang's Room", "This guy loves Anime", None, Cafeteria, parking_lot, [WhiteSoftCubes], [Cpu4],
-            [GraphicsCard3])
+SB20 = Room("Mr Yang's Room", "This guy loves Anime", None, None, None, None, None, Cafeteria, parking_lot,
+            [WhiteSoftCylinders, Cpu4, GraphicsCard3], )
 Downtown_Dresno = Room("The City of Dresno", "There are a lot of work offices here", None, parking_lot)
 Ethan_James_High_School = Room("Ethan James High School Grades 9-12", "The School", None, Downtown_Dresno)
 Grandparents_House = Room("The house that my grandparents live in.", "There could be some items here", None,
@@ -560,5 +562,14 @@ while playing:
             if item_found is not None:
                 player.inventory.append(item_found)
                 player.current_location.items.remove(item_found)
+                print("This'll be good")
+
+    elif "inventory" in command:
+        print("You have these items on your personel")
+        print(player.inventory)
+        for item_found in player.inventory:
+            if item_found is None:
+                print("You have no items at the moment. Go pick some up for the Computer you are planning to build")
+
     else:
         print("Command Not recognized.")
