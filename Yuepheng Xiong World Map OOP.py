@@ -472,25 +472,25 @@ parking_lot = Room("The Parking Lot", "There are a few cars parked here", None, 
 Amphitheater = Room("The stage Outside", "There might be some items here", None, R19A,)
 Cafeteria = Room("The Place to get food and chill", "There is some leftover non eaten baked ham and cheese bars and"
                                                     "there might be some items here", None, Amphitheater,
-                 [PorkAndCheese], [RiceAndSeaweed], [HotDog], [WhiteSeeds],)
-SB20 = Room("Mr Yang's Room", "This guy loves Anime", None, None, None, None, None, Cafeteria, parking_lot,
-            [WhiteSoftCylinders, Cpu4, GraphicsCard3], )
+                 [PorkAndCheese, RiceAndSeaweed, HotDog, WhiteSeeds],)
+SB20 = Room("Mr Yang's Room", "This guy loves Anime", None, None, None, None, Cafeteria, parking_lot,
+            [WhiteSoftCylinders, CentralProcessingUnit4, GraphicsCard3], )
 Downtown_Dresno = Room("The City of Dresno", "There are a lot of work offices here", None, parking_lot)
 Ethan_James_High_School = Room("Ethan James High School Grades 9-12", "The School", None, Downtown_Dresno)
 Grandparents_House = Room("The house that my grandparents live in.", "There could be some items here", None,
                           Ethan_James_High_School, Downtown_Dresno, [hdd], [Computer2], [GraphicsCard4])
 Parents_House = Room("My mom, dad, 2 sisters and 1 brother live here", "There could be some helpful items here", None,
-                     Grandparents_House, [Ram1], [Cpu2], [Computer3], [GraphicsCard1])
+                     Grandparents_House, [Ram1], [CentralProcessingUnit2], [Computer3], [GraphicsCard1])
 Office = Room("The Front desk of Ethan James High school", "You could talk to the VPs, assistants, and staff", None,
               R19A, [Computer1])
 San_Framsico = Room("The City of Rich People AKA San Framsico", "I might need some items in the stores here",  None,
-                    Downtown_Dresno, [SamSong3], [SamSong1], [Ram2], [Cpu3], [GraphicsCard8])
+                    Downtown_Dresno, [SamSong3], [SamSong1], [Ram2], [CentralProcessingUnit3], [GraphicsCard8])
 Cousins_House = Room("My Cousins live here", "They might be of help to me", None, Parents_House, [Computer2],
                      [SamSong2])
 R13B = Room("Mr. Dawson's Room", "There could be some useful items here", None, SB20, R19A, [Cpu3], [APhone8])
 SL15 = Room("Mrs. Hazen's Biology Room", "There might be some useful items here", None, R13B, SB20, R19A, [APhone10F])
 J_Mart = Room("The J mart to get food, technology, clothing etc.", "I might need some of the useful items here", None,
-              Downtown_Dresno, Parents_House, [hdd4], [GraphicsCard6], [Cpu])
+              Downtown_Dresno, Parents_House, [hdd4], [GraphicsCard6], [CentralProcessingUnit])
 
 
 Parents_House.south = J_Mart
@@ -570,6 +570,8 @@ while playing:
         for item_found in player.inventory:
             if item_found is None:
                 print("You have no items at the moment. Go pick some up for the Computer you are planning to build")
+            else:
+                print(item_found.name)
 
     else:
         print("Command Not recognized.")
