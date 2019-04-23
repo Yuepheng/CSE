@@ -18,7 +18,7 @@
     <SUITE FILE_PATH="coverage/CSE$Semester_2_Notes.coverage" NAME="Semester 2 Notes Coverage Results" MODIFIED="1547764430949" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/CSE$World_Map_OOP.coverage" NAME="World Map OOP Coverage Results" MODIFIED="1551393041818" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/CSE$Dictionary_World_Map_By_Yuepheng_Xiong.coverage" NAME="Dictionary World Map By Yuepheng Xiong Coverage Results" MODIFIED="1551132290755" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/CSE$Yuepheng_Xiong_World_Map_OOP.coverage" NAME="Yuepheng Xiong World Map OOP Coverage Results" MODIFIED="1555105421590" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/CSE$Yuepheng_Xiong_World_Map_OOP.coverage" NAME="Yuepheng Xiong World Map OOP Coverage Results" MODIFIED="1556054725572" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/CSE$My_Object_by_Yuepheng_Xiong.coverage" NAME="My Object by Yuepheng Xiong Coverage Results" MODIFIED="1550873633732" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/CSE$Yuepheng_Xiong__Hangman.coverage" NAME="Yuepheng Xiong- Hangman Coverage Results" MODIFIED="1550268000112" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/CSE$Yuepheng_Xiong___Guess_Game.coverage" NAME="Yuepheng Xiong - Guess Game Coverage Results" MODIFIED="1547676802897" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/notes" />
@@ -75,8 +75,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Yuepheng Xiong World Map OOP.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1144">
-              <caret line="494" lean-forward="true" selection-start-line="494" selection-end-line="494" />
+            <state relative-caret-position="-2001">
+              <caret line="488" column="27" lean-forward="true" selection-start-line="488" selection-start-column="27" selection-end-line="488" selection-end-column="27" />
             </state>
           </provider>
         </entry>
@@ -109,6 +109,10 @@
       <find>Computer</find>
       <find>HardDrive3</find>
       <find>lass '__main__.HardDrive3'</find>
+      <find>I</find>
+      <find>Item</find>
+      <find>take</find>
+      <find>append</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -349,22 +353,24 @@
       <workItem from="1554843071046" duration="2800000" />
       <workItem from="1554928971061" duration="3068000" />
       <workItem from="1555013561057" duration="3819000" />
-      <workItem from="1555103193799" duration="2258000" />
+      <workItem from="1555103193799" duration="2310000" />
+      <workItem from="1556052414576" duration="3046000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="76557000" />
+    <option name="totallyTimeSpent" value="79655000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Structure" order="0" sideWeight="0.5027322" side_tool="true" weight="0.20668693" />
-      <window_info id="Favorites" order="1" sideWeight="0.59574467" side_tool="true" visible="true" weight="0.022692889" />
-      <window_info content_ui="combo" id="Project" order="2" sideWeight="0.40425533" visible="true" weight="0.022692889" />
+      <window_info id="Favorites" order="1" sideWeight="0.5040917" side_tool="true" weight="0.022692889" />
+      <window_info content_ui="combo" id="Project" order="2" sideWeight="0.49590835" visible="true" weight="0.022692889" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.84615386" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.7577741" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -538,8 +544,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Yuepheng Xiong World Map OOP.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1144">
-          <caret line="494" lean-forward="true" selection-start-line="494" selection-end-line="494" />
+        <state relative-caret-position="-2001">
+          <caret line="488" column="27" lean-forward="true" selection-start-line="488" selection-start-column="27" selection-end-line="488" selection-end-column="27" />
         </state>
       </provider>
     </entry>
