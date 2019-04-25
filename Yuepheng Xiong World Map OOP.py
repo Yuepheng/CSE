@@ -464,12 +464,17 @@ hdd4 = HardDrive4("Samsong 1Tb Solid State Drive", ssd=1000, windows10home=True)
 
 
 # Option 1 - Use the Variables, but fix later
-R19A = Room("Mr. Wade's Room", "This is the room you are in and You plan to get parts and build THE ULTIMATE GAMING "
-                               "COMPUTER",
+R19A = Room("Mr. Wade's Room", "This is the room you are in. 'MAKE SURE TO DO SOME COMPUTER RESEARCH BEFORE PLAYING TO"
+                               "KNOW THE PARTS YOU ARE GETTING!!!!' Thank You From the Creator"
+                               "You plan to get parts and build THE ULTIMATE GAMING "
+                               "COMPUTER. Collect parts and when you are finished collecting the ones you like then"
+                               "SUCCESS!!  (Computer part names will be changed due to Copyright) 3 Cars will be "
+                               "given to you as you are a little car sabby and discover it. There are some extra items"
+                               "that serve no purpose to the game but to stand as a background item",
             None, None, None, None, None, None, [hdd3, GraphicsCard7, GraphicsCard2, GraphicsCard5, Computer4],)
 parking_lot = Room("The Parking Lot", "There are a few cars parked here", None, None, None, None, None, R19A,
                    [Toyota, Nissan, Honda], )
-Amphitheater = Room("The stage Outside", "There might be some items here", None, R19A,)
+Amphitheater = Room("The stage Outside", "Eh nothing much here.", None, R19A,)
 Cafeteria = Room("The Place to get food and chill", "There is some leftover non eaten baked ham and cheese bars and"
                                                     "there might be some items here", None, None, None,
                  None, None, Amphitheater, [PorkAndCheese, RiceAndSeaweed, HotDog, WhiteSeeds],)
@@ -543,7 +548,7 @@ while playing:
         pos = short_directions.index(command)
         command = directions[pos]
 
-    if command.lower() in ['q', 'quit', 'exit']:
+    if command.lower() in ['q', 'quit', 'exit', 'y', 'Y']:
         playing = False
     elif command in directions:
         try:
@@ -560,11 +565,16 @@ while playing:
         Name = Item
         for item in player.current_location.items:    # For the Item in the player's current location
             if item.name == item:           # If the item name is shown
-                item_found = item       # The item is show
+                item_found = item       # The item is shown
             if item_found is not None:
                 player.inventory.append(item_found)
                 player.current_location.items.remove(item_found)
-                print("Ill take this!. I'm sure it'll be useful")
+                print("I'll take this!")
+
+    for item in player.inventory:    # Scans the Player Inventory for Items.... I Think...
+        item_found = True
+        if item_found in player.inventory [7]:  # If the item limit is reached Print next line.... I think..
+            print("Do you have the correct amount of items yet or do you need to collect more?    Y or N")
 
     elif "inventory" in command:
         print("You have these items on your personel")
@@ -576,3 +586,9 @@ while playing:
                 print(item_found.name)
     else:
         print("Command Not recognized.")
+
+
+# Questions to Ask Mr. Wiebe
+# Whats with the error on Line 574??
+# I took down some taking items code but when I try it why doesn't it work?
+# 
