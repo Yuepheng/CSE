@@ -542,6 +542,7 @@ while playing:
     for item in player.current_location.items:
         print(item.name)
 
+    # print(player.current_location.items)
     command = input(">_")
 
     if command in short_directions:
@@ -560,20 +561,17 @@ while playing:
             print("I can't Go that Way")
 
     elif "take" in command:
-        item = command[5:]  # For the 5th letter the computer will import that item
+        item_name = command[5:]  # For the 5th letter the computer will import that item
         item_found = None
-        Name = Item
         for item in player.current_location.items:    # For the Item in the player's current location
-            if item.name == item:           # If the item name is shown
+            if item.name == item_name:           # If the item name is shown
                 item_found = item       # The item is shown
-            if item_found is not None:
-                player.inventory.append(item_found)
-                player.current_location.items.remove(item_found)
-                print("I'll take this!")
+        if item_found is not None:
+            player.inventory.append(item_found)
+            player.current_location.items.remove(item_found)
+            print("I'll take this!")
 
-    for item in player.inventory:    # Scans the Player Inventory for Items.... I Think...
-        item_found = True
-        if item_found in player.inventory [7]:  # If the item limit is reached Print next line.... I think..
+        if len(player.inventory) >= 7:  # If the item limit is reached Print next line....
             print("Do you have the correct amount of items yet or do you need to collect more?    Y or N")
 
     elif "inventory" in command:
@@ -581,14 +579,8 @@ while playing:
         print(player.inventory)
         for item_found in player.inventory:
             if item_found is None:
-                print("You have no items at the moment. Go pick some up for the Computer you are planning to build")
+                print("You have no items at the moment. Go pick up some for the Computer you are planning to build")
             else:
                 print(item_found.name)
     else:
         print("Command Not recognized.")
-
-
-# Questions to Ask Mr. Wiebe
-# Whats with the error on Line 574??
-# I took down some taking items code but when I try it why doesn't it work?
-# 
