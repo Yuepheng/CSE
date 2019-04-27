@@ -464,13 +464,7 @@ hdd4 = HardDrive4("Samsong 1Tb Solid State Drive", ssd=1000, windows10home=True)
 
 
 # Option 1 - Use the Variables, but fix later
-R19A = Room("Mr. Wade's Room", "This is the room you are in. 'MAKE SURE TO DO SOME COMPUTER RESEARCH BEFORE PLAYING TO"
-                               "KNOW THE PARTS YOU ARE GETTING!!!!' Thank You From the Creator"
-                               "You plan to get parts and build THE ULTIMATE GAMING "
-                               "COMPUTER. Collect parts and when you are finished collecting the ones you like then"
-                               "SUCCESS!!  (Computer part names will be changed due to Copyright) 3 Cars will be "
-                               "given to you as you are a little car sabby and discover it. There are some extra items"
-                               "that serve no purpose to the game but to stand as a background item",
+R19A = Room("Mr. Wade's Room", "This is the room you are in. You plan to ask your Tech Teacher about something..",
             None, None, None, None, None, None, [hdd3, GraphicsCard7, GraphicsCard2, GraphicsCard5, Computer4],)
 parking_lot = Room("The Parking Lot", "There are a few cars parked here", None, None, None, None, None, R19A,
                    [Toyota, Nissan, Honda], )
@@ -537,6 +531,16 @@ playing = True
 while playing:
     print(player.current_location.name)  # The player has a current location and that location has a name
     print(player.current_location.description)  # The player has a current location and that location has a description
+    print()
+    print()
+    print("Hello! You are a Tech Sabby Person wanting to build a Gaming Or Work Pc")
+    print("You can explore the rooms of a high school along with others in the Fantasy Town of Dresno")
+    print("The Movement commands are N.E.S.W along with Northeast. Some rooms won't allow you to move that direction")
+    print("Once You have the correct items, You have finished the Game! (Building The Computer Will be a Part 2")
+    print("You Will be Prompted if you want to leave the game or continue.")
+    print("Make Sure To research parts of a Computer so you know what to get")
+    print("Have Fun!! :)")
+    print()
     print()
     print("The following items are in the room:")
     for item in player.current_location.items:
