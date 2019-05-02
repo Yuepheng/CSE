@@ -35,6 +35,14 @@ def is_second_num_even(num: str):
     return False
 
 
+def reverse(string):
+    string = string[::-1]
+    return string
+
+
+print(reverse("dlroW olleH"))
+
+
 # with open("Book1.csv", 'r') as old_csv:     # Allows us to open another file and access its Data
 #     reader = csv.reader(old_csv)        # Goes through and reads the information in that CSV
 #     for row in reader:
