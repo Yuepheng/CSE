@@ -11,8 +11,7 @@ test = "4556737586899855"
 #             old_number = row[0]     # A String object
 #             first_num = int(old_number[0])
 #              if first_num == 0:   # Scans the first number a certain number or an old/even number
-#                 number_lis
-
+#                 number_list
 
 def validate(num: str):
     number_list = list(num)
@@ -22,7 +21,9 @@ def validate(num: str):
     print(last_num)
     reversed_list = reverse(number_list)
     print(reversed_list)
-    multiply(number_list)
+    multiply_and_subtract(number_list)
+    print(number_list)
+    add_all_number(number_list)
     print(number_list)
 
 
@@ -31,13 +32,21 @@ def reverse(string):
     return string
 
 
-def multiply(num: list):
+def multiply_and_subtract(num: list):
     for index in range(len(num)):
         num[index] = int(num[index])
         if index % 2 == 0:
             num[index] *= 2
+            if num[index] > 9:
+                num[index] -= 9
 
 
+def add_all_number(num: list):
+    for index in range(len(num)):
+        num[index] = int(num[index])
+        sum(num)
+
+ sd
 print(validate(test))
 
 
