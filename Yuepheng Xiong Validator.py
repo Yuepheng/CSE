@@ -1,30 +1,14 @@
-test = "4556737586899855"
+import csv
 
-
-# with open("Book1.csv", 'r') as old_csv:
-#     with open("MyNewFile.csv", 'w', newline='') as new_csv:
-#         reader = csv.reader(old_csv)
-#         writer = csv.writer(new_csv)
-#         print("Processing....")
-#
-#         for row in reader:
-#             old_number = row[0]     # A String object
-#             first_num = int(old_number[0])
-#              if first_num == 0:   # Scans the first number a certain number or an old/even number
-#                 number_list
 
 def validate(num: str):
     number_list = list(num)
-    print(number_list)
-    last_num = int(number_list.pop(15))         # Goes through and Deletes that last number in the list (15)
-    print(number_list)
-    print(last_num)
-    reversed_list = reverse(number_list)
-    print(reversed_list)
+    last_number = int(number_list[15])
+    number_list.pop(15)
+    number_list = reverse(number_list)
     multiply_and_subtract(number_list)
-    print(number_list)
-    add_all_number(number_list)
-    print(number_list)
+    total_sum = sum(number_list)
+    return mod_ten(total_sum, last_number)
 
 
 def reverse(string):
@@ -34,22 +18,27 @@ def reverse(string):
 
 def multiply_and_subtract(num: list):
     for index in range(len(num)):
-        num[index] = int(num[index])
+        num[index] = int(num[index])    # Goes and looks at the even numbers
         if index % 2 == 0:
             num[index] *= 2
             if num[index] > 9:
                 num[index] -= 9
 
 
-def add_all_number(num: list):
-    for index in range(len(num)):
-        num[index] = int(num[index])
-        sum(num)
-
- sd
-print(validate(test))
+def mod_ten(total_sum, last_number):
+    if int(total_sum) % 10 == int(last_number):
+        return True
+    return False
 
 
-# Notes
+with open("Book1.csv", 'r') as old_csv:
+    with open("MyNewFile.csv", 'w', newline='') as new_csv:
+        reader = csv.reader(old_csv)
+        writer = csv.writer(new_csv)
+        print("Processing....")
+        for row in reader:
+            num = row[0]     # A String object
+            if validate(num):
+                writer.writerow(row)
 
 # for index in range(len(num)):
