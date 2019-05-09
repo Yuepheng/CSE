@@ -1,3 +1,4 @@
+import random
 """
 print("Hello World!")
 
@@ -137,7 +138,6 @@ your_grade = grade_calc(82)
 print(your_grade)
 
 # Random numbers
-import random
 print(random.randint(0, 100))
 
 # Equality Statements
