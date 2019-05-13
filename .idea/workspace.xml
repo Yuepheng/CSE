@@ -43,40 +43,6 @@
     <expand />
     <select />
   </component>
-  <component name="FUSProjectUsageTrigger">
-    <session id="340688036">
-      <usages-collector id="statistics.lifecycle.project">
-        <counts>
-          <entry key="project.closed" value="2" />
-          <entry key="project.open.time.147" value="1" />
-          <entry key="project.open.time.181" value="1" />
-          <entry key="project.opened" value="2" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.open">
-        <counts>
-          <entry key="csv" value="1" />
-          <entry key="py" value="2" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.open">
-        <counts>
-          <entry key="PLAIN_TEXT" value="1" />
-          <entry key="Python" value="2" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.edit">
-        <counts>
-          <entry key="py" value="1246" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.edit">
-        <counts>
-          <entry key="Python" value="1246" />
-        </counts>
-      </usages-collector>
-    </session>
-  </component>
   <component name="FavoritesManager">
     <favorites_list name="CSE" />
   </component>
@@ -94,7 +60,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Yuepheng Xiong Items.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1215">
+            <state>
               <caret line="45" column="25" selection-start-line="45" selection-start-column="25" selection-end-line="45" selection-end-column="25" />
             </state>
           </provider>
@@ -103,7 +69,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/MyNewFile.csv">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="388260">
+            <state>
               <caret line="14380" selection-start-line="14380" selection-end-line="14380" />
             </state>
           </provider>
@@ -112,7 +78,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/CSVNotes.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1593">
+            <state>
               <caret line="59" selection-start-line="59" selection-end-line="59" />
             </state>
           </provider>
@@ -121,8 +87,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Sale Records.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="659">
-              <caret line="69" column="82" selection-start-line="69" selection-start-column="82" selection-end-line="69" selection-end-column="82" />
+            <state relative-caret-position="627">
+              <caret line="82" column="23" selection-start-line="82" selection-start-column="23" selection-end-line="82" selection-end-column="23" />
             </state>
           </provider>
         </entry>
@@ -130,14 +96,16 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Sales Records.csv">
           <provider selected="true" editor-type-id="LargeFileEditor">
-            <state relative-caret-position="-1296" />
+            <state relative-caret-position="-10">
+              <caret line="13" column="18" selection-start-line="13" selection-start-column="15" selection-end-line="13" selection-end-column="18" />
+            </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Yuepheng Xiong Validator.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-151">
+            <state relative-caret-position="-7">
               <caret line="12" selection-start-line="12" selection-end-line="12" />
             </state>
           </provider>
@@ -170,6 +138,8 @@
       <find>666</find>
       <find>fruit</find>
       <find>Fruit</find>
+      <find>veg</find>
+      <find>Sna</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -209,13 +179,7 @@
       </list>
     </option>
   </component>
-  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
-  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
-  <component name="JsGulpfileManager">
-    <detection-done>true</detection-done>
-    <sorting>DEFINITION_ORDER</sorting>
-  </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="-7" />
     <option name="width" value="974" />
     <option name="height" value="1047" />
@@ -243,7 +207,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -442,21 +406,23 @@
       <workItem from="1557348031466" duration="3503000" />
       <workItem from="1557434474029" duration="3454000" />
       <workItem from="1557522135196" duration="2534000" />
+      <workItem from="1557779949052" duration="3464000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="115596000" />
+    <option name="totallyTimeSpent" value="119060000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Structure" order="0" sideWeight="0.5027322" side_tool="true" weight="0.20668693" />
       <window_info id="Favorites" order="1" sideWeight="0.5040917" side_tool="true" weight="0.022692889" />
-      <window_info content_ui="combo" id="Project" order="2" sideWeight="0.49590835" visible="true" weight="0.16950959" />
+      <window_info content_ui="combo" id="Project" order="2" sideWeight="0.49590835" visible="true" weight="0.17110874" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.37053087" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.50595886" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -492,15 +458,12 @@
       </list>
     </option>
   </component>
-  <component name="VcsContentAnnotationSettings">
-    <option name="myLimit" value="2678400000" />
-  </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/CSE$Lucky_7s_Yuepheng_Xiong_RESUBMIT.coverage" NAME="Lucky 7s Yuepheng Xiong RESUBMIT Coverage Results" MODIFIED="1557436265491" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/notes/venv" />
     <SUITE FILE_PATH="coverage/CSE$Basic_Python_Notes.coverage" NAME="Basic Python Notes Coverage Results" MODIFIED="1557436198660" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/notes" />
     <SUITE FILE_PATH="coverage/CSE$CSVNotes.coverage" NAME="CSVNotes Coverage Results" MODIFIED="1556830503137" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/CSE$Dictionary_Notes.coverage" NAME="Dictionary Notes Coverage Results" MODIFIED="1557435704809" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/CSE$Sale_Records__1_.coverage" NAME="Sale Records (1) Coverage Results" MODIFIED="1557524794848" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/CSE$Sale_Records__1_.coverage" NAME="Sale Records (1) Coverage Results" MODIFIED="1557782099322" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/CSE$Yuepheng_Xiong_Validator.coverage" NAME="Yuepheng Xiong Validator Coverage Results" MODIFIED="1557261346379" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/CSE$Sale_Records.coverage" NAME="Sale Records Coverage Results" MODIFIED="1557349749546" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$USER_HOME$/Downloads" />
     <SUITE FILE_PATH="coverage/CSE$Yuepheng_Xiong_World_Map_OOP.coverage" NAME="Yuepheng Xiong World Map OOP Coverage Results" MODIFIED="1556316265308" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
@@ -647,41 +610,43 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Yuepheng Xiong Items.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1215">
+        <state>
           <caret line="45" column="25" selection-start-line="45" selection-start-column="25" selection-end-line="45" selection-end-column="25" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/MyNewFile.csv">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="388260">
+        <state>
           <caret line="14380" selection-start-line="14380" selection-end-line="14380" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/CSVNotes.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1593">
+        <state>
           <caret line="59" selection-start-line="59" selection-end-line="59" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Yuepheng Xiong Validator.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-151">
+        <state relative-caret-position="-7">
           <caret line="12" selection-start-line="12" selection-end-line="12" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Sales Records.csv">
       <provider selected="true" editor-type-id="LargeFileEditor">
-        <state relative-caret-position="-1296" />
+        <state relative-caret-position="-10">
+          <caret line="13" column="18" selection-start-line="13" selection-start-column="15" selection-end-line="13" selection-end-column="18" />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Sale Records.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="659">
-          <caret line="69" column="82" selection-start-line="69" selection-start-column="82" selection-end-line="69" selection-end-column="82" />
+        <state relative-caret-position="627">
+          <caret line="82" column="23" selection-start-line="82" selection-start-column="23" selection-end-line="82" selection-end-column="23" />
         </state>
       </provider>
     </entry>

@@ -12,6 +12,8 @@ with open("Sales Records.csv", 'r') as old_csv:
     Personal_Care_Profit = []
     Baby_Food_Profit = []
     Cereal_Profit = []
+    Veggies_Profit = []
+    Snacks_Profit = []
     print("Processing....")
 
     for row in reader:
@@ -47,7 +49,15 @@ with open("Sales Records.csv", 'r') as old_csv:
         CEREAL = row[2]
         if CEREAL == "Cereal":
             Cereal_Profit.append(float(Profit))
+        VEGGIES = row[2]
+        if VEGGIES == "Vegetables":
+            Veggies_Profit.append(float(Profit))
+        SNACKS = row[2]
+        if SNACKS == "Snacks":
+            Snacks_Profit.append(float(Profit))
 
+    Snacks_sum = sum(Snacks_Profit)
+    Veggies_sum = sum(Veggies_Profit)
     Cereal_sum = sum(Cereal_Profit)
     Baby_Food_sum = sum(Baby_Food_Profit)
     Personal_Care_sum = sum(Personal_Care_Profit)
@@ -68,4 +78,7 @@ with open("Sales Records.csv", 'r') as old_csv:
     print("The total amount of profit the Personal Care category made is %f" % Personal_Care_sum)
     print("The Total amount of profit the Baby Food category made is %f" % Baby_Food_sum)
     print("The total amount of profit the Cereal Category made is %f" % Cereal_sum)
+    print("The total amount of profit the Vegetables category made is %f" % Veggies_sum)
+    print("The total amount of Profit the Snacks Category made is %f" % Snacks_sum)
+    print("AND The Category with the MOST AMOUNT OF PROFIT is.......................... THE COSMETICS CATEGORY!!!!!!!!")
     print("Done")
