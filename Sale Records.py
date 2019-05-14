@@ -14,6 +14,11 @@ with open("Sales Records.csv", 'r') as old_csv:
     Cereal_Profit = []
     Veggies_Profit = []
     Snacks_Profit = []
+    SubSaharan_Africa_Profit = []
+    MiddleEastandNorthAfrica_Profit = []
+    AustraliaOceania_Profit = []
+    Europe_Profit = []
+    Asia_Profit = []
     print("Processing....")
 
     for row in reader:
@@ -55,7 +60,27 @@ with open("Sales Records.csv", 'r') as old_csv:
         SNACKS = row[2]
         if SNACKS == "Snacks":
             Snacks_Profit.append(float(Profit))
+        SUBSAHARAN = row[0]
+        if SUBSAHARAN == "Sub-Saharan Africa":
+            SubSaharan_Africa_Profit.append(float(Profit))
+        MIDDLEEASTANDNORTHAFRICA = row[0]
+        if MIDDLEEASTANDNORTHAFRICA == "Middle East and North Africa"
+            MiddleEastandNorthAfrica_Profit.append(float(Profit))
+        AUSTRALIAOCEANIA = row[0]
+        if AUSTRALIAOCEANIA == "Australia and Ocreania":
+            AustraliaOceania_Profit.append(float(Profit))
+        EUROPE = row[0]
+        if EUROPE == "Europe":
+            Europe_Profit.append(float(Profit))
+        ASIA = row[0]
+        if ASIA == "Asia":
+            Asia_Profit.append(float(Profit))
 
+
+    Europe_sum = sum(Europe_Profit)
+    AustraliaOceania_sum = sum(AustraliaOceania_Profit)
+    MiddleEastandNorthAfrica_sum = sum(MiddleEastandNorthAfrica_Profit)
+    SubSaharan_Africa_sum = sum(SubSaharan_Africa_Profit)
     Snacks_sum = sum(Snacks_Profit)
     Veggies_sum = sum(Veggies_Profit)
     Cereal_sum = sum(Cereal_Profit)
@@ -81,4 +106,14 @@ with open("Sales Records.csv", 'r') as old_csv:
     print("The total amount of profit the Vegetables category made is %f" % Veggies_sum)
     print("The total amount of Profit the Snacks Category made is %f" % Snacks_sum)
     print("AND The Category with the MOST AMOUNT OF PROFIT is.......................... THE COSMETICS CATEGORY!!!!!!!!")
+    print()
+    print()
+    print("New List about the profit from Regions.")
+    print("The total Profit of the Sub Saharan Africa Region is % f" % SubSaharan_Africa_sum)
+    print("The total profit of the Middle East and North Africa region is %f" % MiddleEastandNorthAfrica_sum)
+    print("The total Profit of the Australia And North Africa region is %f" % AustraliaOceania_sum)
+    print("The total amount of Profit the Europe region is %f" % Europe_sum)
+    print("")
+
+
     print("Done")
