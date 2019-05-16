@@ -18,7 +18,7 @@ def reverse(string):
 
 def multiply_and_subtract(num: list):
     for index in range(len(num)):
-        num[index] = int(num[index])    # Goes and looks at the even numbers
+        num[index] = int(num[index])
         if index % 2 == 0:
             num[index] *= 2
             if num[index] > 9:
