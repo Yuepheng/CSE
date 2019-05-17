@@ -20,6 +20,7 @@ with open("Sales Records.csv", 'r') as old_csv:
     Europe_Profit = []
     Asia_Profit = []
     CentralAmericaAndCaribbean_Profit = []
+    NorthAmerica_Profit = []
     print("Processing....")
 
     for row in reader:
@@ -78,7 +79,11 @@ with open("Sales Records.csv", 'r') as old_csv:
         CENTRALAMERICAANDCARIBBEAN = row[0]
         if CENTRALAMERICAANDCARIBBEAN == "Central America and the Caribbean":
             CentralAmericaAndCaribbean_Profit.append(float(Profit))
+        NORTHAMERICA = row[0]
+        if NORTHAMERICA == "North America":
+            NorthAmerica_Profit.append(float(Profit))
 
+    NorthAmerica_sum = sum(NorthAmerica_Profit)
     Asia_sum = sum(Asia_Profit)
     CentralAmericaAndCaribbean_Sum = sum(CentralAmericaAndCaribbean_Profit)
     Europe_sum = sum(Europe_Profit)
@@ -104,11 +109,14 @@ with open("Sales Records.csv", 'r') as old_csv:
     RegionProfitSum = [SubSaharan_Africa_sum, MiddleEastandNorthAfrica_sum, AustraliaOceania_sum, Europe_sum,
                        CentralAmericaAndCaribbean_Sum, Asia_sum]
 
+    RegionOfProfit = ["Sub-Saharan Africa", "Middle East and North Africa", "Australia and Oceania", "Europe",
+                      "Asia", "Central America and the Caribbean", "North America"]
+
     ItemCategoryType = ["Fruit", "Household", "Office Supplies", "Clothes", "Meat", "Beverages", "Cosmetics",
                         "Personal Care", "Baby Care", "Cereal", "Vegetables", "Snacks"]
 
-    index = ItemCategoryType.index(max(ItemCategoryType))
-    print("AND The Category with the MOST AMOUNT OF PROFIT is....... %s!!!!!!!!!!!!!!!!" % ItemCategoryType[index])
+    index = ItemCategorySum.index(max(ItemCategorySum))
+    index2 = RegionProfitSum.index(max(RegionProfitSum))
 
     print("THE TOTAL AMOUNT OF PROFIT THE FRUIT CATEGORY IS %f" % Fruit_Sum)
     print("THE TOTAL AMOUNT OF PROFIT THE HOUSEHOLD CATEGORY IS %f" % Household_sum)
@@ -122,6 +130,7 @@ with open("Sales Records.csv", 'r') as old_csv:
     print("The total amount of profit the Cereal Category made is %f" % Cereal_sum)
     print("The total amount of profit the Vegetables category made is %f" % Veggies_sum)
     print("The total amount of Profit the Snacks Category made is %f" % Snacks_sum)
+    print("AND The Category with the MOST AMOUNT OF PROFIT is....... %s!!!!!!!!!!!!!!!!" % ItemCategoryType[index])
     print()
     print()
     print("New List about the profit from Regions.")
@@ -131,5 +140,5 @@ with open("Sales Records.csv", 'r') as old_csv:
     print("The total amount of Profit the Europe region is %f" % Europe_sum)
     print("The total amount of Profit the Asia region has is %f" % Asia_sum)
     print("The total amount of Profit the Central America and Caribbean region is %f" % CentralAmericaAndCaribbean_Sum)
-    print("The Region that has the most amount of Profit is ")
+    print("The total amount of Profit North America made is %f" % NorthAmerica_sum)
     print("Done")
