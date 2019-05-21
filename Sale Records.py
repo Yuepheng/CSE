@@ -21,46 +21,71 @@ with open("Sales Records.csv", 'r') as old_csv:
     Asia_Profit = []
     CentralAmericaAndCaribbean_Profit = []
     NorthAmerica_Profit = []
+    Fruit_units = []
+    Household_units = []
+    OfficeSupplies_Units = []
+    Clothes_Units = []
+    Meat_Unit = []
+    Beverages_Units = []
+    Cosmetics_Units = []
+    PersonalCare_Units = []
+    BabyFood_Unit = []
+    Cereal_Units = []
+    Veggies_Units = []
+    Snacks_Units = []
     print("Processing....")
 
     for row in reader:
         Profit = row[13]
+        SoldUnits = row[8]
         FRUIT = row[2]
         if FRUIT == "Fruits":
             Fruit_Profit.append(float(Profit))
+            Fruit_units.append(int(SoldUnits))
         HOUSEHOLD = row[2]
         if HOUSEHOLD == "Household":
             Household_Profit.append(float(Profit))
+            Household_units.append(int(SoldUnits))
         OFFICE_SUPPLIES = row[2]
         if OFFICE_SUPPLIES == "Office Supplies":
             Office_Supplies_Profit.append(float(Profit))
+            OfficeSupplies_Units.append(int(SoldUnits))
         CLOTHES = row[2]
         if CLOTHES == "Clothes":
             Clothes_Profit.append(float(Profit))
+            Clothes_Units.append(int(SoldUnits))
         MEAT = row[2]
         if MEAT == "Meat":
             Meat_Profit.append(float(Profit))
+            Meat_Unit.append(int(SoldUnits))
         BEVERAGES = row[2]
         if BEVERAGES == "Beverages":
             Beverages_Profit.append(float(Profit))
+            Beverages_Units.append(int(SoldUnits))
         COSMETICS = row[2]
         if COSMETICS == "Cosmetics":
             Cosmetics_Profit.append(float(Profit))
+            Cosmetics_Units.append(int(SoldUnits))
         PERSONAL_CARE = row[2]
         if PERSONAL_CARE == "Personal Care":
             Personal_Care_Profit.append(float(Profit))
+            PersonalCare_Units.append(int(SoldUnits))
         BABY_FOOD = row[2]
         if BABY_FOOD == "Baby Food":
             Baby_Food_Profit.append(float(Profit))
+            BabyFood_Unit.append(int(SoldUnits))
         CEREAL = row[2]
         if CEREAL == "Cereal":
             Cereal_Profit.append(float(Profit))
+            Cereal_Units.append(int(SoldUnits))
         VEGGIES = row[2]
         if VEGGIES == "Vegetables":
             Veggies_Profit.append(float(Profit))
+            Veggies_Units.append(int(SoldUnits))
         SNACKS = row[2]
         if SNACKS == "Snacks":
             Snacks_Profit.append(float(Profit))
+            Snacks_Units.append(int(SoldUnits))
         SUBSAHARAN = row[0]
         if SUBSAHARAN == "Sub-Saharan Africa":
             SubSaharan_Africa_Profit.append(float(Profit))
@@ -82,7 +107,20 @@ with open("Sales Records.csv", 'r') as old_csv:
         NORTHAMERICA = row[0]
         if NORTHAMERICA == "North America":
             NorthAmerica_Profit.append(float(Profit))
+        Unit_AverageFruit = row[8]
 
+    SnacksUnit_Total = sum(Snacks_Units)
+    VeggiesUnits_Total = sum(Veggies_Units)
+    CerealUnit_Total = sum(Cereal_Units)
+    BabyFoodUnit_Total = sum(BabyFood_Unit)
+    PersonalCareUnits_Total = sum(PersonalCare_Units)
+    CosmeticsUnits_Total = sum(Cosmetics_Units)
+    BeveragesUnits_Total = sum(Beverages_Units)
+    MeatUnits_Total = sum(Meat_Unit)
+    ClothesUnits_Total = sum(Clothes_Units)
+    OfficeSuppliesUnits_Total = sum(OfficeSupplies_Units)
+    HouseholdUnits_Total = sum(Household_units)
+    FruitUnits_Total = sum(Fruit_units)
     NorthAmerica_sum = sum(NorthAmerica_Profit)
     Asia_sum = sum(Asia_Profit)
     CentralAmericaAndCaribbean_Sum = sum(CentralAmericaAndCaribbean_Profit)
@@ -103,6 +141,8 @@ with open("Sales Records.csv", 'r') as old_csv:
     Household_sum = sum(Household_Profit)
     Fruit_Sum = sum(Fruit_Profit)
 
+    FruitAverageUnits = Fruit_Sum / FruitUnits_Total
+    
     ItemCategorySum = [Fruit_Sum, Household_sum, Office_Supplies_sum, Clothes_sum, Meat_sum, Beverages_sum,
                        Cosmetics_sum, Personal_Care_sum, Baby_Food_sum, Cereal_sum, Veggies_sum, Snacks_sum]
 
@@ -141,4 +181,5 @@ with open("Sales Records.csv", 'r') as old_csv:
     print("The total amount of Profit the Asia region has is %f" % Asia_sum)
     print("The total amount of Profit the Central America and Caribbean region is %f" % CentralAmericaAndCaribbean_Sum)
     print("The total amount of Profit North America made is %f" % NorthAmerica_sum)
+    print("AND the Region with the Most amount of profit is (DRUMROLL).... %s!!!!!!!" % RegionOfProfit[index2])
     print("Done")
