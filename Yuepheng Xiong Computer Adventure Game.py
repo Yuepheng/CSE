@@ -536,8 +536,6 @@ while playing:
     print("Hello! You are a Tech Sabby Person wanting to build a Gaming Or Work Pc")
     print("You can explore the rooms of a high school along with others in the Fantasy Town of Dresno")
     print("The Movement commands are N.E.S.W along with Northeast. Some rooms won't allow you to move that direction")
-    print("Once You have the correct items, You have finished the Game! (Building The Computer Will be a Part 2")
-    print("You Will be Prompted if you want to leave the game or continue.")
     print("Make Sure To research parts of a Computer so you know what to get")
     print("Have Fun!! :)")
     print()

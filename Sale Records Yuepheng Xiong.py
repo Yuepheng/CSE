@@ -142,7 +142,18 @@ with open("Sales Records.csv", 'r') as old_csv:
     Fruit_Sum = sum(Fruit_Profit)
 
     FruitAverageUnits = Fruit_Sum / FruitUnits_Total
-    
+    Household_units = Household_sum / HouseholdUnits_Total
+    OfficeSupplies_Units = Office_Supplies_sum / OfficeSuppliesUnits_Total
+    Clothes_Units = Clothes_sum / ClothesUnits_Total
+    Meat_Unit = Meat_sum / MeatUnits_Total
+    Beverages_Units = Beverages_sum / BeveragesUnits_Total
+    Cosmetics_Units = Cosmetics_sum / CosmeticsUnits_Total
+    PersonalCare_Units = Personal_Care_sum / PersonalCareUnits_Total
+    BabyFood_Unit = Baby_Food_sum / BabyFoodUnit_Total
+    Cereal_Units = Cereal_sum / CerealUnit_Total
+    Veggies_Units = Veggies_sum / VeggiesUnits_Total
+    Snacks_Units = Snacks_sum / SnacksUnit_Total
+
     ItemCategorySum = [Fruit_Sum, Household_sum, Office_Supplies_sum, Clothes_sum, Meat_sum, Beverages_sum,
                        Cosmetics_sum, Personal_Care_sum, Baby_Food_sum, Cereal_sum, Veggies_sum, Snacks_sum]
 
@@ -158,6 +169,20 @@ with open("Sales Records.csv", 'r') as old_csv:
     index = ItemCategorySum.index(max(ItemCategorySum))
     index2 = RegionProfitSum.index(max(RegionProfitSum))
 
+    print("The average amount of Money per Unit in the Fruit Category is %f" % FruitUnits_Total)
+    print("The average amount of Money per Unit in the Household category is %f" % HouseholdUnits_Total)
+    print("The average amount of Money per Unit in the Office Supply category is %f" % OfficeSuppliesUnits_Total)
+    print("The average amount of Money per Unit in the Clothes Category is %f" % ClothesUnits_Total)
+    print("The average amount of Money per Unit in the Meat Category is %f" % MeatUnits_Total)
+    print("The average amount of Money per unit in the Beverage category is %f" % BeveragesUnits_Total)
+    print("The average amount of Money per unit in the Cosmetics category is %f" % CosmeticsUnits_Total)
+    print("The average amount of Money per unit in the Personal Care Category is %f" % PersonalCareUnits_Total)
+    print("The average amount of Money per unit in the Baby Food Category is %f" % BabyFoodUnit_Total)
+    print("The average amount of Money per unit in the Cereal Category is %f" % CerealUnit_Total)
+    print("The average amount of Money per unit in the Veggies Category is %f" % VeggiesUnits_Total)
+    print("The average amount of Money per unit in the Snacks Category is %f" % SnacksUnit_Total)
+    print()
+    print()
     print("THE TOTAL AMOUNT OF PROFIT THE FRUIT CATEGORY IS %f" % Fruit_Sum)
     print("THE TOTAL AMOUNT OF PROFIT THE HOUSEHOLD CATEGORY IS %f" % Household_sum)
     print("THE TOTAL AMOUNT OF PROFIT THE OFFICE SUPPLY CATEGORY IS %f" % Office_Supplies_sum)
