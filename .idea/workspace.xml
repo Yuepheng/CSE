@@ -43,6 +43,26 @@
     <expand />
     <select />
   </component>
+  <component name="FUSProjectUsageTrigger">
+    <session id="340688036">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.open.time.374" value="1" />
+          <entry key="project.opened" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="py" value="647" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="Python" value="647" />
+        </counts>
+      </usages-collector>
+    </session>
+  </component>
   <component name="FavoritesManager">
     <favorites_list name="CSE" />
   </component>
@@ -69,17 +89,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/CSVNotes.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="821">
+            <state relative-caret-position="1593">
               <caret line="59" selection-start-line="59" selection-end-line="59" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Sales Records.csv">
-          <provider selected="true" editor-type-id="LargeFileEditor">
-            <state relative-caret-position="1132">
-              <caret line="48" selection-start-line="48" selection-end-line="48" />
             </state>
           </provider>
         </entry>
@@ -87,7 +98,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Yuepheng Xiong Validator.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-36">
+            <state relative-caret-position="432">
               <caret line="16" selection-start-line="16" selection-end-line="16" />
             </state>
           </provider>
@@ -96,8 +107,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Yuepheng Xiong Computer Adventure Game.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="402">
-              <caret line="577" lean-forward="true" selection-start-line="577" selection-end-line="577" />
+            <state relative-caret-position="160">
+              <caret line="553" lean-forward="true" selection-start-line="553" selection-end-line="553" />
             </state>
           </provider>
         </entry>
@@ -174,6 +185,12 @@
       </list>
     </option>
   </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="217" />
     <option name="y" value="11" />
@@ -185,7 +202,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -197,13 +213,14 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -420,11 +437,12 @@
     <option name="totallyTimeSpent" value="144311000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Structure" order="0" sideWeight="0.5027322" side_tool="true" weight="0.20668693" />
       <window_info id="Favorites" order="1" sideWeight="0.5040917" side_tool="true" weight="0.022692889" />
-      <window_info content_ui="combo" id="Project" order="2" sideWeight="0.49590835" visible="true" weight="0.19936034" />
+      <window_info content_ui="combo" id="Project" order="2" sideWeight="0.49590835" visible="true" weight="0.20196672" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.38786566" />
@@ -462,6 +480,9 @@
         <option value="1" />
       </list>
     </option>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/CSE$Lucky_7s_Yuepheng_Xiong_RESUBMIT.coverage" NAME="Lucky 7s Yuepheng Xiong RESUBMIT Coverage Results" MODIFIED="1557436265491" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/notes/venv" />
@@ -607,20 +628,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Yuepheng Xiong Items.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1647">
-          <caret line="61" selection-start-line="61" selection-end-line="61" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/My Object by Yuepheng Xiong.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="21" selection-start-column="21" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Sale Records.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="676">
@@ -642,31 +649,45 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/My Object by Yuepheng Xiong.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="21" selection-start-column="21" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Yuepheng Xiong Items.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1647">
+          <caret line="61" selection-start-line="61" selection-end-line="61" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/CSVNotes.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="821">
+        <state relative-caret-position="1593">
           <caret line="59" selection-start-line="59" selection-end-line="59" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Sales Records.csv">
       <provider selected="true" editor-type-id="LargeFileEditor">
-        <state relative-caret-position="1132">
+        <state relative-caret-position="1296">
           <caret line="48" selection-start-line="48" selection-end-line="48" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Yuepheng Xiong Validator.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-36">
+        <state relative-caret-position="432">
           <caret line="16" selection-start-line="16" selection-end-line="16" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Yuepheng Xiong Computer Adventure Game.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="402">
-          <caret line="577" lean-forward="true" selection-start-line="577" selection-end-line="577" />
+        <state relative-caret-position="160">
+          <caret line="553" lean-forward="true" selection-start-line="553" selection-end-line="553" />
         </state>
       </provider>
     </entry>

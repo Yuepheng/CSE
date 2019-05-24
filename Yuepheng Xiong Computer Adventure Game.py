@@ -535,7 +535,8 @@ while playing:
     print()
     print("Hello! You are a Tech Sabby Person wanting to build a Gaming Or Work Pc")
     print("You can explore the rooms of a high school along with others in the Fantasy Town of Dresno")
-    print("The Movement commands are N.E.S.W along with Northeast. Some rooms won't allow you to move that direction")
+    print("The Movement commands are N.E.S.W (North, East, South, and West) along with Northeast. Some rooms "
+          "won't allow you to move that direction")
     print("Make Sure To research parts of a Computer so you know what to get")
     print("Have Fun!! :)")
     print()
@@ -551,8 +552,21 @@ while playing:
         pos = short_directions.index(command)
         command = directions[pos]
 
-    if command.lower() in ['q', 'quit', 'exit', 'y', 'Y']:
+    if command.lower() in ['q', 'quit', 'exit', ]:
         playing = False
+    if command.lower() in ['y', 'Y']:
+        print("You return Home with all of your chosen parts.")
+        print()
+        print("You start by attaching the motherboard to the case")
+        print()
+        print("The ram and hard drive is being attached to the motherboard")
+        print()
+        print("The power supply is being screwed in place on the case and the cables are being plugged into the the"
+              "motherboard")
+        print()
+        print("You attach the Graphics card to the motherboard and turn on the Computer")
+        print()
+        print("Success! You've managed to build a PC!")
     elif command in directions:
         try:
             next_room = player.find_room(command)
